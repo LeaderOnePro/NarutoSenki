@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Sasuke</dateName>
+        <dateName type="attackValue">5500</dateName>
+        <dateName type="attackRangeX">47</dateName>
+        <dateName type="attackRangeY">70</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Sasuke_Idle_01.png</frameName>
+        <frameName>Sasuke_Idle_02.png</frameName>
+        <frameName>Sasuke_Idle_03.png</frameName>
+        <frameName>Sasuke_Idle_04.png</frameName>
+        <frameName>Sasuke_Idle_05.png</frameName>
+        <frameName>Sasuke_Idle_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Sasuke_Walk_01.png</frameName>
+        <frameName>Sasuke_Walk_02.png</frameName>
+        <frameName>Sasuke_Walk_03.png</frameName>
+        <frameName>Sasuke_Walk_04.png</frameName>
+        <frameName>Sasuke_Walk_05.png</frameName>
+        <frameName>Sasuke_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Sasuke_Hurt_01.png</frameName>
+        <frameName>Sasuke_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Sasuke/sasuke_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Sasuke_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Sasuke_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sasuke_KnockDown_02.png</frameName> 
+          <frameName>Sasuke_KnockDown_03.png</frameName>
+            <eventName type="setDelay">60</eventName>
+          <frameName>Sasuke_KnockDown_04.png</frameName>
+          <frameName>Sasuke_KnockDown_05.png</frameName>
+          <frameName>Sasuke_KnockDown_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Sasuke_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sasuke_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sasuke_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Sasuke_KnockDown_01.png</frameName>
+          <frameName>Sasuke_KnockDown_02.png</frameName>
+          <frameName>Sasuke_KnockDown_03.png</frameName>
+          <eventName type="setSound">Audio/Sasuke/sasuke_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">80</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Sasuke_NAttack_01.png</frameName>
+        <frameName>Sasuke_NAttack_02.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <frameName>Sasuke_NAttack_03.png</frameName>
+        <frameName>Sasuke_NAttack_04.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Sasuke_NAttack_05.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <eventName type="setSound">Audio/Effect/kong.ogg</eventName>
+        <frameName>Sasuke_NAttack_06.png</frameName>
+        <frameName>Sasuke_NAttack_07.png</frameName>
+        <frameName>Sasuke_NAttack_08.png</frameName>
+        <eventName type="setSound">Audio/Sasuke/sasuke_combo.mp3</eventName>
+        <eventName type="setMove">16</eventName>
+        <frameName>Sasuke_NAttack_09.png</frameName>
+        <frameName>Sasuke_NAttack_10.png</frameName>   
+        <eventName type="setAttackBox">bl_hit</eventName>  
+         <eventName type="setSound">Audio/Effect/kong.ogg</eventName>
+        <frameName>Sasuke_NAttack_11.png</frameName>
+        <eventName type="setDelay">20</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">aAttack</dateName>
+       <dateName type="attackValue">560</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">10</coldName>
+        <dateName type="combatPoint">1320</dateName>
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Sasuke/sasuke_skill1.mp3</eventName>
+        <frameName>Sasuke_Skill01_01.png</frameName>
+        <frameName>Sasuke_Skill01_02.png</frameName>
+        <eventName type="setSound">Audio/Sasuke/sasuke_skill1_1.mp3</eventName>
+        <eventName type="setChargeB">196</eventName>
+        <frameName>Sasuke_Skill01_03.png</frameName>
+        <eventName type="setAttackBox">bc_hit</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Sasuke_Skill01_04.png</frameName>
+        <eventName type="setAttackBox">bc_hit</eventName>
+        <frameName>Sasuke_Skill01_05.png</frameName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+		    <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">760</dateName>
+            <dateName type="attackRangeX">16</dateName>
+            <dateName type="attackRangeY">32</dateName>
+            <coldName type="coldDown">15</coldName>
+             <dateName type="combatPoint">1520</dateName>
+        </date>
+        <frame>
+          <frameName>Sasuke_Skill02_01.png</frameName>
+          <eventName type="setSound">Audio/Sasuke/sasuke_skill2.mp3</eventName>
+          <frameName>Sasuke_Skill02_02.png</frameName>
+          <eventName type="setSound">Audio/Sasuke/sasuke_skill2_2.mp3</eventName>
+          <frameName>Sasuke_Skill02_03.png</frameName>
+          <frameName>Sasuke_Skill02_04.png</frameName>
+          <eventName type="setAttackBox">bc_hit</eventName>
+          <eventName type="setChargeB">192</eventName>
+          <frameName>Sasuke_Skill02_05.png</frameName>
+          <frameName>Sasuke_Skill02_06.png</frameName>
+          <eventName type="setAttackBox">bc_hit</eventName>
+          <frameName>Sasuke_Skill02_07.png</frameName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">tBuff</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">15</dateName>
+            <coldName type="coldDown">25</coldName>
+             <dateName type="combatPoint">0</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Sasuke/sasuke_skill3.mp3</eventName>
+          <frameName>Sasuke_Skill03_001.png</frameName>
+          <frameName>Sasuke_Skill03_002.png</frameName>
+          <eventName type="setSkillEffect">sharingan2</eventName>
+          <frameName>Sasuke_Skill03_003.png</frameName>
+           <eventName type="setSound">Audio/Effect/srg2.mp3</eventName>
+          <frameName>Sasuke_Skill03_004.png</frameName>
+          <frameName>Sasuke_Skill03_005.png</frameName>
+          <eventName type="setDelay">20</eventName>
+          <eventName type="setBuff">17</eventName>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">Summon</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">3040</dateName>
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+        <frameName>Sasuke_Skill04_08.png</frameName>
+        <eventName type="setSound">Audio/Sasuke/sasuke_skill4.mp3</eventName>
+        <eventName type="setMon">Qilin</eventName>
+        <eventName type="setDelay">40</eventName>
+        <frameName>Sasuke_Skill04_09.png</frameName>
+        <frameName>Sasuke_Skill04_10.png</frameName>
+        <eventName type="setDelay">30</eventName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+        <date>
+       <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">13</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">5000</dateName>
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+        <eventName type="setCommand">setInvincible</eventName>
+        <frameName>Sasuke_Skill05_01.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setOugis">10</eventName>
+        <frameName>Sasuke_Skill05_02.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Sasuke_Skill05_03.png</frameName>
+        <frameName>Sasuke_Skill05_04.png</frameName>
+        <frameName>Sasuke_Skill05_05.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Sasuke_Skill05_06.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Sasuke_Skill05_07.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setBuff">18</eventName>
+        <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+         <date>
+            <dateName type="attackType">Hurt</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+            <frameName>Sasuke_Skill08_01.png</frameName>
+            <eventName type="setAttackBox">bc_hit</eventName>
+            <frameName>Sasuke_Skill08_02.png</frameName>
+            <eventName type="setSound">Audio/Sasuke/sasuke_skill10.mp3</eventName>
+            <frameName>Sasuke_Skill08_03.png</frameName>
+            <eventName type="setAttackBox">bc_hit</eventName>
+            <frameName>Sasuke_Skill08_04.png</frameName>
+        </frame>
+    </action>
+    <action value="skill09">
+        <date>
+            <dateName type="attackType">KnockDown</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <eventName type="setCommand">setInvincible</eventName>
+          <frameName>Sasuke_Skill09_01.png</frameName>
+          <frameName>Sasuke_Skill09_02.png</frameName>
+          <frameName>Sasuke_Skill09_03.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sasuke_Skill09_04.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sasuke_Skill09_05.png</frameName>
+          <frameName>Sasuke_Skill09_06.png</frameName>
+          <frameName>Sasuke_Skill09_07.png</frameName>
+          <frameName>Sasuke_Skill09_08.png</frameName>
+          <frameName>Sasuke_Skill09_09.png</frameName>
+          <eventName type="setTransform">40</eventName>
+          <eventName type="setCommand">reInvincible</eventName>
+        </frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">260</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <frameName>Sasuke_Skill10_001.png</frameName>
+          <frameName>Sasuke_Skill10_002.png</frameName>
+          <frameName>Sasuke_Skill10_003.png</frameName>
+          <frameName>Sasuke_Skill10_004.png</frameName>
+        </frame>
+    </action>
+
+  <action value="skill11">
+        <date>
+            <dateName type="attackType">Walk</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <frameName>Sasuke_Skill11_001.png</frameName>
+           <eventName type="setShadow">10</eventName> 
+          <frameName>Sasuke_Skill11_002.png</frameName>
+          <frameName>Sasuke_Skill11_003.png</frameName>
+           <eventName type="setShadow">10</eventName> 
+          <frameName>Sasuke_Skill11_004.png</frameName>
+          <frameName>Sasuke_Skill11_005.png</frameName>
+          <frameName>Sasuke_Skill11_006.png</frameName>
+        </frame>
+    </action>
+
+      <action value="skill12">
+        <date>
+            <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <frameName>Sasuke_Skill12_001.png</frameName>
+           <eventName type="setSound">Audio/Sasuke/sasuke_skill11.mp3</eventName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sasuke_Skill12_002.png</frameName>    
+          <frameName>Sasuke_Skill12_003.png</frameName>
+          <eventName type="setChargeB">128</eventName>
+          <frameName>Sasuke_Skill12_004.png</frameName>
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <frameName>Sasuke_Skill12_005.png</frameName>
+          <frameName>Sasuke_Skill12_006.png</frameName>
+        </frame>
+    </action>
+
+
+</animation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Deidara</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Shino_Idle_001.png</frameName>
+        <frameName>Shino_Idle_002.png</frameName>
+        <frameName>Shino_Idle_003.png</frameName>
+        <frameName>Shino_Idle_004.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+           <frameName>Shino_Walk_01.png</frameName>
+        <frameName>Shino_Walk_02.png</frameName>
+        <frameName>Shino_Walk_03.png</frameName>
+        <frameName>Shino_Walk_04.png</frameName>
+        <frameName>Shino_Walk_05.png</frameName>
+                <frameName>Shino_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">760</dateName>
+        <dateName type="attackRangeX">15</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>BugClone_Move_001.png</frameName>
+         <eventName type="setSound">Audio/Shino/Shino_skill2_1.mp3</eventName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <frameName>BugClone_Move_002.png</frameName>
+        <frameName>BugClone_Move_003.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <frameName>BugClone_Move_004.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

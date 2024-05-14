@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Chiyo</dateName>
+        <dateName type="attackValue">6000</dateName>
+        <dateName type="attackRangeX">45</dateName>
+        <dateName type="attackRangeY">65</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Chiyo_Idle_001.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Chiyo_Idle_002.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Chiyo_Idle_003.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Chiyo_Walk_01.png</frameName>
+        <frameName>Chiyo_Walk_02.png</frameName>
+        <frameName>Chiyo_Walk_03.png</frameName>
+        <frameName>Chiyo_Walk_04.png</frameName>
+        <frameName>Chiyo_Walk_05.png</frameName>
+        <frameName>Chiyo_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Chiyo_Hurt_01.png</frameName>
+        <frameName>Chiyo_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Chiyo/Chiyo_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Chiyo_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Chiyo_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Chiyo_KnockDown_02.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Chiyo_KnockDown_03.png</frameName>
+           <eventName type="setDelay">60</eventName>
+          <frameName>Chiyo_KnockDown_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Chiyo_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Chiyo_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Chiyo_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Chiyo_KnockDown_01.png</frameName>
+          <frameName>Chiyo_KnockDown_02.png</frameName>
+          <eventName type="setSound">Audio/Chiyo/Chiyo_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">80</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Chiyo_NAttack_01.png</frameName>
+        <frameName>Chiyo_NAttack_02.png</frameName>
+         <eventName type="setDelay">10</eventName>
+         <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Chiyo_NAttack_03.png</frameName>
+         <eventName type="setDelay">10</eventName>
+        <frameName>Chiyo_NAttack_04.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Chiyo_NAttack_05.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+           <eventName type="setDelay">10</eventName>
+        <frameName>Chiyo_NAttack_06.png</frameName>
+        <frameName>Chiyo_NAttack_07.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <frameName>Chiyo_NAttack_08.png</frameName>
+        <eventName type="setSound">Audio/Chiyo/Chiyo_combo.mp3</eventName>
+        <eventName type="setSound">Audio/Effect/combo3.mp3</eventName>
+        <eventName type="setAttackBox">l_hit</eventName>
+         <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">10</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+        <frameName>Chiyo_Skill01_01.png</frameName>
+        <eventName type="setSound">Audio/Chiyo/Chiyo_skill1.mp3</eventName>
+        <frameName>Chiyo_Skill01_02.png</frameName>
+        <frameName>Chiyo_Skill01_03.png</frameName>
+        <frameName>Chiyo_Skill01_04.png</frameName>
+        <eventName type="setClone">0</eventName>
+        <eventName type="setBuff">17</eventName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+		    <dateName type="attackType">cBuff</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">15</dateName>
+            <coldName type="coldDown">15</coldName>
+             <dateName type="combatPoint">0</dateName>
+        </date>
+        <frame>
+            
+            <eventName type="setSound">Audio/Chiyo/Chiyo_skill2.mp3</eventName>
+             <eventName type="setMonAttack">1</eventName>
+            <frameName>Chiyo_Skill02_01.png</frameName>
+            <frameName>Chiyo_Skill02_02.png</frameName>
+            <frameName>Chiyo_Skill02_03.png</frameName>
+             <frameName>Chiyo_Skill02_01.png</frameName>
+              <frameName>Chiyo_Skill02_02.png</frameName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+        <dateName type="attackType">Summon</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">0</dateName>
+        <coldName type="coldDown">25</coldName>
+        <dateName type="combatPoint">2460</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Chiyo/Chiyo_skill3.mp3</eventName>
+          <eventName type="setMonAttack">2</eventName>
+          <frameName>Chiyo_Skill03_01.png</frameName>
+           <eventName type="setSound">Audio/Effect/kuilei.mp3</eventName>
+          <frameName>Chiyo_Skill03_02.png</frameName>
+          <frameName>Chiyo_Skill03_03.png</frameName>
+          <frameName>Chiyo_Skill03_04.png</frameName>            
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+      <dateName type="attackType">GroupBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">10</dateName>
+       <coldName type="coldDown">0</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+          <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+          <eventName type="setCommand">setInvincible</eventName>
+          <frameName>Chiyo_Skill04_001.png</frameName>
+          <eventName type="setSound">Audio/Chiyo/Chiyo_skill4.mp3</eventName>
+          <eventName type="setBuff">1000</eventName>
+          <frameName>Chiyo_Skill04_002.png</frameName>
+          <frameName>Chiyo_Skill04_003.png</frameName>
+          <frameName>Chiyo_Skill04_004.png</frameName> 
+          <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+      <date>
+       <dateName type="attackType">cAttack</dateName>
+       <dateName type="attackValue">660</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">0</coldName>
+       <dateName type="combatPoint">0</dateName>
+     </date>
+    <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+   <frameName>Chiyo_Skill05_001.png</frameName>
+<frameName>Chiyo_Skill05_002.png</frameName>
+<frameName>Chiyo_Skill05_003.png</frameName>
+  <eventName type="setSound">Audio/Effect/poof.mp3</eventName>  
+<frameName>Chiyo_Skill05_004.png</frameName>
+ <eventName type="setOugis">10</eventName>
+<frameName>Chiyo_Skill05_005.png</frameName>
+    <eventName type="setSound">Audio/Chiyo/Chiyo_skill5.mp3</eventName>
+<frameName>Chiyo_Skill05_006.png</frameName>
+<frameName>Chiyo_Skill05_007.png</frameName>
+<frameName>Chiyo_Skill05_008.png</frameName>
+<eventName type="setCommand">setInvincible</eventName>
+<eventName type="setMon">Sanbao</eventName>
+<frameName>Chiyo_Skill05_009.png</frameName>
+<frameName>Chiyo_Skill05_010.png</frameName>
+<frameName>Chiyo_Skill05_011.png</frameName>
+<frameName>Chiyo_Skill05_012.png</frameName>
+<frameName>Chiyo_Skill05_009.png</frameName>
+<frameName>Chiyo_Skill05_010.png</frameName>
+<frameName>Chiyo_Skill05_011.png</frameName>
+ <frameName>Chiyo_Skill05_009.png</frameName>
+<frameName>Chiyo_Skill05_010.png</frameName>
+<frameName>Chiyo_Skill05_011.png</frameName>
+<frameName>Chiyo_Skill05_012.png</frameName>
+<frameName>Chiyo_Skill05_013.png</frameName>
+<frameName>Chiyo_Skill05_014.png</frameName>
+<frameName>Chiyo_Skill05_015.png</frameName>
+<eventName type="setAttackBox">c_hit</eventName>
+<frameName>Chiyo_Skill05_016.png</frameName>
+<frameName>Chiyo_Skill05_017.png</frameName>
+<eventName type="setAttackBox">o2_hit</eventName>
+  <eventName type="setDSound">Audio/Effect/damage_h.mp3</eventName>
+<frameName>Chiyo_Skill05_018.png</frameName>
+<frameName>Chiyo_Skill05_019.png</frameName>
+  <eventName type="setSound">Audio/Effect/poof.mp3</eventName>  
+<frameName>Chiyo_Skill05_020.png</frameName>
+<frameName>Chiyo_Skill05_021.png</frameName>
+    <eventName type="setSound">Audio/Chiyo/Chiyo_skill5_1.mp3</eventName>
+<frameName>Chiyo_Skill05_022.png</frameName>
+<frameName>Chiyo_Skill05_023.png</frameName>
+<eventName type="setAttackBox">c_hit</eventName>
+   <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+<frameName>Chiyo_Skill05_024.png</frameName>
+<frameName>Chiyo_Skill05_025.png</frameName>
+<eventName type="setAttackBox">c_hit</eventName>
+   <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+<frameName>Chiyo_Skill05_024.png</frameName>
+<frameName>Chiyo_Skill05_025.png</frameName>
+<eventName type="setAttackBox">o_hit</eventName>
+   <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+<frameName>Chiyo_Skill05_026.png</frameName>
+  <eventName type="setSound">Audio/Effect/poof.mp3</eventName>  
+<frameName>Chiyo_Skill05_027.png</frameName>
+<frameName>Chiyo_Skill05_028.png</frameName>
+<frameName>Chiyo_Skill05_029.png</frameName>
+<eventName type="setAttackBox">f_hit</eventName>
+  <eventName type="setDSound">Audio/Effect/damage_o2.mp3</eventName>
+<frameName>Chiyo_Skill05_030.png</frameName>
+<frameName>Chiyo_Skill05_031.png</frameName>
+  <eventName type="setSound">Audio/Effect/poof.mp3</eventName>  
+<frameName>Chiyo_Skill05_032.png</frameName>
+<frameName>Chiyo_Skill05_033.png</frameName>
+<frameName>Chiyo_Skill05_034.png</frameName>
+<frameName>Chiyo_Skill05_035.png</frameName>
+<eventName type="setAttackBox">ac_hit</eventName>
+ <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+<frameName>Chiyo_Skill05_036.png</frameName>
+<frameName>Chiyo_Skill05_037.png</frameName>
+<eventName type="setAttackBox">ac_hit</eventName>
+  <eventName type="setSound">Audio/Effect/poof.mp3</eventName>  
+<frameName>Chiyo_Skill05_038.png</frameName>
+<frameName>Chiyo_Skill05_039.png</frameName>
+<frameName>Chiyo_Skill05_040.png</frameName>
+<frameName>Chiyo_Skill05_041.png</frameName>
+    <eventName type="setSound">Audio/Chiyo/Chiyo_skill5_2.mp3</eventName>
+<frameName>Chiyo_Skill05_042.png</frameName>
+<frameName>Chiyo_Skill05_043.png</frameName>
+<frameName>Chiyo_Skill05_044.png</frameName>
+<eventName type="setAttackBox">f_hit</eventName>
+ <eventName type="setDSound">Audio/Effect/damage_h.mp3</eventName>
+<frameName>Chiyo_Skill05_045.png</frameName>
+<frameName>Chiyo_Skill05_046.png</frameName>
+<frameName>Chiyo_Skill05_047.png</frameName>
+<eventName type="setSound">Audio/Effect/poof.mp3</eventName>  
+<frameName>Chiyo_Skill05_048.png</frameName>
+        <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+       <frame></frame>
+    </action>
+
+</animation>

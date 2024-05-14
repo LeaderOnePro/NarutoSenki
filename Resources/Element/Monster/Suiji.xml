@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Suiji</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Suiji_Move_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+          <frameName>Suiji_Move_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Suiji_Move_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">760</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+          <frameName>Suiji_Move_001.png</frameName>
+         
+          <eventName type="setAttackBox">b_hit</eventName>
+          <frameName>Suiji_Move_002.png</frameName>
+          <frameName>Suiji_Move_003.png</frameName>
+          <eventName type="setAttackBox">b_hit</eventName>
+          <frameName>Suiji_Move_004.png</frameName>
+          <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

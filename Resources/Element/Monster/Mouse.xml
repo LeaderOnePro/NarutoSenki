@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Mouse</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">29</dateName>
+        <dateName type="attackRangeY">15</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Mouse_Walk_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Mouse_Walk_01.png</frameName>
+        <frameName>Mouse_Walk_02.png</frameName>
+        <frameName>Mouse_Walk_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">360</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>ink_boom01.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/stick_damage.mp3</eventName>
+        <frameName>ink_boom02.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

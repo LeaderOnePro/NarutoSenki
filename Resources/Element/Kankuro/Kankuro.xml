@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Kankuro</dateName>
+        <dateName type="attackValue">5500</dateName>
+        <dateName type="attackRangeX">45</dateName>
+        <dateName type="attackRangeY">75</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Kankuro_Idle_01.png</frameName>
+        <frameName>Kankuro_Idle_02.png</frameName>
+        <frameName>Kankuro_Idle_03.png</frameName>
+        <frameName>Kankuro_Idle_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Kankuro_Walk_01.png</frameName>
+        <frameName>Kankuro_Walk_02.png</frameName>
+        <frameName>Kankuro_Walk_03.png</frameName>
+        <frameName>Kankuro_Walk_04.png</frameName>
+        <frameName>Kankuro_Walk_05.png</frameName>
+        <frameName>Kankuro_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Kankuro_Hurt_01.png</frameName>
+        <frameName>Kankuro_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Kankuro/kankuro_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Kankuro_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Kankuro_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Kankuro_KnockDown_02.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Kankuro_KnockDown_03.png</frameName>
+          <frameName>Kankuro_KnockDown_04.png</frameName>
+          <frameName>Kankuro_KnockDown_05.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Kankuro_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Kankuro_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Kankuro_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Kankuro_KnockDown_01.png</frameName>
+          <frameName>Kankuro_KnockDown_02.png</frameName>
+          <eventName type="setSound">Audio/Kankuro/kankuro_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Kankuro_NAttack_01.png</frameName>
+        <frameName>Kankuro_NAttack_02.png</frameName>
+        <frameName>Kankuro_NAttack_03.png</frameName>
+        <frameName>Kankuro_NAttack_04.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Kankuro_NAttack_05.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Kankuro_NAttack_06.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Kankuro_NAttack_07.png</frameName>
+        <frameName>Kankuro_NAttack_08.png</frameName>
+        <frameName>Kankuro_NAttack_09.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <frameName>Kankuro_NAttack_10.png</frameName>
+        <eventName type="setSound">Audio/Kankuro/kankuro_combo.mp3</eventName>
+        <eventName type="setSound">Audio/Effect/combo3.mp3</eventName>
+        <eventName type="setAttackBox">l_hit</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">10</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+        <frameName>Kankuro_Skill01_01.png</frameName>
+        <eventName type="setSound">Audio/Kankuro/kankuro_skill1.mp3</eventName>
+        <frameName>Kankuro_Skill01_03.png</frameName>
+        <frameName>Kankuro_Skill01_04.png</frameName>
+        <frameName>Kankuro_Skill01_05.png</frameName>
+        <eventName type="setClone">0</eventName>
+        <eventName type="setBuff">17</eventName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+		    <dateName type="attackType">cBuff</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">15</dateName>
+            <coldName type="coldDown">15</coldName>
+             <dateName type="combatPoint">1680</dateName>
+        </date>
+        <frame>
+            <eventName type="setMonAttack">2</eventName>
+            <eventName type="setSound">Audio/Kankuro/kankuro_skill2.mp3</eventName>
+            <frameName>Kankuro_Skill02_01.png</frameName>
+            <frameName>Kankuro_Skill02_02.png</frameName>
+            <frameName>Kankuro_Skill02_03.png</frameName>
+            <frameName>Kankuro_Skill02_04.png</frameName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+        <dateName type="attackType">Summon</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">0</dateName>
+        <coldName type="coldDown">25</coldName>
+        <dateName type="combatPoint">2060</dateName>
+        </date>
+        <frame>
+           <eventName type="setSound">Audio/Kankuro/kankuro_skill3.mp3</eventName>
+            <frameName>Kankuro_Skill03_01.png</frameName>
+            <eventName type="setMon">Kuroari</eventName>  
+            <frameName>Kankuro_Skill03_02.png</frameName>
+            <frameName>Kankuro_Skill03_03.png</frameName>
+            <frameName>Kankuro_Skill03_04.png</frameName>      
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">0</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+         <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+         <frameName>Kankuro_Skill04_01.png</frameName>
+         <eventName type="setSound">Audio/Kankuro/kankuro_skill4.mp3</eventName>
+         <eventName type="setDelay">20</eventName>
+         <frameName>Kankuro_Skill04_02.png</frameName>
+         <frameName>Kankuro_Skill04_03.png</frameName>
+         <frameName>Kankuro_Skill04_04.png</frameName>
+         <eventName type="setDelay">20</eventName>
+         <eventName type="setClone">1</eventName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+      <date>
+       <dateName type="attackType">Summon</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">0</coldName>
+       <dateName type="combatPoint">0</dateName>
+     </date>
+    <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+        <frameName>Kankuro_Skill05_01.png</frameName>
+        <eventName type="setCommand">setInvincible</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Kankuro_Skill05_02.png</frameName>
+        <eventName type="setDelay">10</eventName>
+         <eventName type="setOugis">10</eventName>
+        <frameName>Kankuro_Skill05_03.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setClone">2</eventName>
+        <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+       <frame></frame>
+    </action>
+
+</animation>

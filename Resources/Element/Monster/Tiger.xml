@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Tiger</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">29</dateName>
+        <dateName type="attackRangeY">15</dateName>
+        <coldName type="coldDown">320</coldName>
+      </date>
+      <frame>
+        <frameName>Tiger_Idle_001.png</frameName>
+        <frameName>Tiger_Idle_002.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Tiger_Idle_003.png</frameName>
+         <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Tiger_Move_001.png</frameName>
+        <frameName>Tiger_Move_002.png</frameName>
+        <frameName>Tiger_Move_003.png</frameName>
+        <frameName>Tiger_Move_004.png</frameName>
+        <frameName>Tiger_Move_005.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">1560</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Tiger_Attack_001.png</frameName>
+        <frameName>ink_boom01.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/stick_damage.mp3</eventName>
+        <frameName>ink_boom02.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

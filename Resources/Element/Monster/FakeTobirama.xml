@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Itachi</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">112</coldName>
+      </date>
+      <frame>
+        <frameName>FakeTobirama_Move_08.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+         <frameName>FakeTobirama_Move_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">860</dateName>
+        <dateName type="attackRangeX">32</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <eventName type="setCommand">findTarget</eventName> 
+        <eventName type="setSkillEffect">Hiraishin2</eventName>
+        <eventName type="setSound">Audio/Effect/hiraishin_effect.mp3</eventName>
+        <eventName type="setCommand">setTransport</eventName>
+        <frameName>FakeTobirama_Move_01.png</frameName>
+        <frameName>FakeTobirama_Move_02.png</frameName>   
+        <frameName>FakeTobirama_Move_03.png</frameName>
+        <frameName>FakeTobirama_Move_04.png</frameName>
+        <frameName>FakeTobirama_Move_05.png</frameName>
+        <eventName type="setAttackBox">ts_hit</eventName>
+        <eventName type="setSkillEffect">Hiraishin2</eventName>
+        <eventName type="setSound">Audio/Effect/hiraishin_effect2.mp3</eventName>
+        <eventName type="setCommand">setTransport</eventName>
+        <frameName>FakeTobirama_Move_06.png</frameName>
+        <frameName>FakeTobirama_Move_07.png</frameName>
+         <frameName>FakeTobirama_Move_08.png</frameName>
+        <eventName type="setDelay">10</eventName>
+         <eventName type="setSkillEffect">smk</eventName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

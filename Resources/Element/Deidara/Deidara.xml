@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Deidara</dateName>
+        <dateName type="attackValue">5000</dateName>
+        <dateName type="attackRangeX">43</dateName>
+        <dateName type="attackRangeY">80</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Deidara_Idle_01.png</frameName>
+        <frameName>Deidara_Idle_02.png</frameName>
+        <frameName>Deidara_Idle_03.png</frameName>
+        <frameName>Deidara_Idle_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Deidara_Walk_01.png</frameName>
+        <frameName>Deidara_Walk_02.png</frameName>
+        <frameName>Deidara_Walk_03.png</frameName>
+        <frameName>Deidara_Walk_04.png</frameName>
+        <frameName>Deidara_Walk_05.png</frameName>
+        <frameName>Deidara_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Deidara_Hurt_01.png</frameName>
+        <frameName>Deidara_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Deidara/deidara_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Deidara_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Deidara_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Deidara_KnockDown_02.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Deidara_KnockDown_03.png</frameName>
+          <frameName>Deidara_KnockDown_04.png</frameName>
+          <frameName>Deidara_KnockDown_05.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Deidara_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Deidara_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Deidara_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Deidara_KnockDown_01.png</frameName>
+          <frameName>Deidara_KnockDown_02.png</frameName>
+          <eventName type="setSound">Audio/Deidara/deidara_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Deidara_NAttack_01.png</frameName>
+        <frameName>Deidara_NAttack_02.png</frameName>
+        <frameName>Deidara_NAttack_03.png</frameName>
+        <frameName>Deidara_NAttack_04.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Deidara_NAttack_05.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Deidara_NAttack_06.png</frameName>
+        <frameName>Deidara_NAttack_07.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Deidara_NAttack_08.png</frameName>
+        <eventName type="setSound">Audio/Deidara/deidara_combo.mp3</eventName>
+        <frameName>Deidara_NAttack_09.png</frameName>
+        <frameName>Deidara_NAttack_10.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <eventName type="setSound">Audio/Effect/combo3.mp3</eventName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <frameName>Deidara_NAttack_11.png</frameName>
+        <eventName type="setDelay">20</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+        <dateName type="attackType">cBuff</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">6</dateName>
+        <coldName type="coldDown">15</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Deidara/deidara_skill1.mp3</eventName>
+        <frameName>Deidara_Skill01_001.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Deidara_Skill01_002.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Deidara_Skill01_003.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setBuff">17</eventName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+            <dateName type="attackType">Summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">25</coldName>
+            <dateName type="combatPoint">0</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Deidara/deidara_skill2.mp3</eventName>
+          <frameName>Deidara_Skill02_02.png</frameName>
+          <frameName>Deidara_Skill02_03.png</frameName>
+          <frameName>Deidara_Skill02_05.png</frameName>
+          <frameName>Deidara_Skill02_06.png</frameName>
+          <frameName>Deidara_Skill02_07.png</frameName>
+          <frameName>Deidara_Skill02_08.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <eventName type="setClone">15</eventName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+			   <dateName type="attackType">stBuff</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">3</dateName>
+            <coldName type="coldDown">25</coldName>
+             <dateName type="combatPoint">2260</dateName>
+        </date>
+        <frame>
+            <frameName>Deidara_Skill03_00.png</frameName>
+            <eventName type="setDelay">20</eventName>
+            <eventName type="setMon">FakeDeidara</eventName>
+            <eventName type="setBuff">3</eventName>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">8</dateName>
+       <coldName type="coldDown">1</coldName>
+       <dateName type="combatPoint">4320</dateName>
+     </date>
+     <frame>
+       <eventName type="setSound">Audio/Deidara/deidara_skill4.mp3</eventName>
+      <eventName type="setCommand">setInvincible</eventName>
+      <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+      <eventName type="setSkillEffect">smk</eventName>
+      <frameName>Deidara_Skill04_01.png</frameName>
+      <eventName type="setBuff">18</eventName>
+      <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+         <date>
+        <dateName type="attackType">Summon</dateName>
+        <dateName type="attackValue">960</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">0</dateName>
+        <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">9840</dateName>
+        </date>
+        <frame>
+        <frameName>Deidara_Skill05_13.png</frameName>
+        <eventName type="setSound">Audio/Deidara/deidara_skill5.mp3</eventName>
+        <eventName type="setCommand">setInvincible</eventName>
+        <frameName>Deidara_Skill05_14.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Deidara_Skill05_15.png</frameName>
+        <frameName>Deidara_Skill05_16.png</frameName>
+        <frameName>Deidara_Skill05_19.png</frameName>
+        <eventName type="setOugis">10</eventName>
+        <frameName>Deidara_Skill05_20.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Deidara_Skill05_22.png</frameName>
+        <frameName>Deidara_Skill05_23.png</frameName>
+        <frameName>Deidara_Skill05_24.png</frameName>
+        <frameName>Deidara_Skill05_25.png</frameName>
+        <frameName>Deidara_Skill05_26.png</frameName>
+        <eventName type="setMon">DeidaraBom</eventName>
+        <eventName type="setCommand">setInvisible</eventName>
+        <eventName type="setDelay">120</eventName>
+        <frameName>Deidara_KnockDown_01.png</frameName>
+        <eventName type="setCommand">reInvisible</eventName>
+        <eventName type="setCommand">setDead</eventName>
+        <eventName type="setCommand">reInvincible</eventName>
+        </frame>
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">Summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <frameName>Deidara_Skill10_001.png</frameName>
+          <frameName>Deidara_Skill10_002.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Deidara_Skill10_003.png</frameName>
+          <eventName type="setMon">ClayBird</eventName>
+        </frame>
+    </action>
+    <action value="skill11">
+        <date>
+            <dateName type="attackType">Idle</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+            <frameName>Deidara_Fly_01.png</frameName>
+            <frameName>Deidara_Fly_02.png</frameName>
+            <frameName>Deidara_Fly_03.png</frameName>
+            <frameName>Deidara_Fly_04.png</frameName>
+            <frameName>Deidara_Fly_05.png</frameName>
+            <frameName>Deidara_Fly_06.png</frameName>    
+        </frame>
+    </action>
+
+    <action value="skill12">
+        <date>
+            <dateName type="attackType">Summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+            <frameName>Deidara_FlyMove_01.png</frameName>
+            <frameName>Deidara_FlyMove_02.png</frameName>
+            <frameName>Deidara_FlyMove_03.png</frameName>
+            <frameName>Deidara_FlyMove_04.png</frameName>
+            <frameName>Deidara_FlyMove_05.png</frameName>
+            <frameName>Deidara_FlyMove_06.png</frameName>
+        </frame>
+    </action>
+   
+</animation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Tiger</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">29</dateName>
+        <dateName type="attackRangeY">15</dateName>
+        <coldName type="coldDown">320</coldName>
+      </date>
+      <frame>
+        <frameName>Kuroari_Move_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Kuroari_Move_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">2060</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Kuroari_Move_02.png</frameName>
+        <frameName>Kuroari_Move_03.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setSound">Audio/Effect/kuroari.mp3</eventName>
+        <eventName type="setAttackBox">ct_hit</eventName>
+        <frameName>Kuroari_Move_04.png</frameName>
+        <eventName type="setDelay">310</eventName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

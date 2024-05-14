@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">DogWall</dateName>
+        <dateName type="attackValue">8000</dateName>
+        <dateName type="attackRangeX">126</dateName>
+        <dateName type="attackRangeY">96</dateName>
+        <coldName type="coldDown">112</coldName>
+      </date>
+      <frame>
+        <frameName>DogWall_Move_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>DogWall_Move_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+        <frameName>DogWall_Move_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">1160</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+            <frameName>DogWall_Move_01.png</frameName>
+             <eventName type="setAttackBox">b_hit</eventName>
+            <frameName>DogWall_Move_02.png</frameName>
+            <frameName>DogWall_Move_03.png</frameName>
+             <eventName type="setAttackBox">a_hit</eventName>
+            <frameName>DogWall_Move_04.png</frameName>
+            <frameName>DogWall_Move_05.png</frameName>
+             <eventName type="setAttackBox">a_hit</eventName>
+            <eventName type="setDelay">500</eventName>
+      </frame>
+    </action>
+
+  <action value="skill01">
+     <date>
+     <dateName type="attackType">Summon</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">15</dateName>
+       <coldName type="coldDown">0</coldName>
+     </date>
+     <frame>
+         
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+            <dateName type="attackType">GroupHeal</dateName>
+            <dateName type="attackValue">200</dateName>
+           <dateName type="attackRangeX">0</dateName>
+           <dateName type="attackRangeY">0</dateName>
+           <coldName type="coldDown">10</coldName>
+        </date>
+        <frame>
+         
+        </frame>
+    </action>
+
+    <action value="skill03">
+      <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">320</dateName>
+        <dateName type="attackRangeX">160</dateName>
+        <dateName type="attackRangeY">64</dateName>
+        <coldName type="coldDown">25</coldName>
+      </date>
+       <frame></frame>
+    </action>
+
+   <action value="skill04">
+    <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">320</dateName>
+        <dateName type="attackRangeX">160</dateName>
+        <dateName type="attackRangeY">64</dateName>
+        <coldName type="coldDown">25</coldName>
+      </date>
+      <frame></frame>
+   </action>
+
+    <action value="skill05">
+      <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">320</dateName>
+        <dateName type="attackRangeX">160</dateName>
+        <dateName type="attackRangeY">64</dateName>
+        <coldName type="coldDown">25</coldName>
+      </date>
+        <frame></frame>
+    </action>
+
+    
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+ <frame></frame>
+    </action>
+</animation>

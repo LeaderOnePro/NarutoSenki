@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Sai</dateName>
+        <dateName type="attackValue">5000</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">75</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Sai_Idle_01.png</frameName>
+        <frameName>Sai_Idle_02.png</frameName>
+        <frameName>Sai_Idle_03.png</frameName>
+        <frameName>Sai_Idle_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Sai_Walk_01.png</frameName>
+        <frameName>Sai_Walk_02.png</frameName>
+        <frameName>Sai_Walk_03.png</frameName>
+        <frameName>Sai_Walk_04.png</frameName>
+        <frameName>Sai_Walk_05.png</frameName>
+        <frameName>Sai_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Sai_Hurt_01.png</frameName>
+        <frameName>Sai_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Sai/sai_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Sai_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Sai_KnockDown_01.png</frameName>
+          <frameName>Sai_KnockDown_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sai_KnockDown_03.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Sai_KnockDown_04.png</frameName>
+          <frameName>Sai_KnockDown_05.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Sai_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sai_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Sai_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Sai_KnockDown_01.png</frameName>
+          <frameName>Sai_KnockDown_02.png</frameName>
+          <frameName>Sai_KnockDown_03.png</frameName>
+          <eventName type="setSound">Audio/Sai/sai_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Sai_NAttack_01.png</frameName>
+        <frameName>Sai_NAttack_02.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <frameName>Sai_NAttack_03.png</frameName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Sai_NAttack_04.png</frameName>
+        <frameName>Sai_NAttack_05.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Sai_NAttack_06.png</frameName>
+        <frameName>Sai_NAttack_07.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Sai_NAttack_08.png</frameName>
+        <eventName type="setSound">Audio/Sai/sai_combo.mp3</eventName>
+        <frameName>Sai_NAttack_09.png</frameName>
+        <frameName>Sai_NAttack_10.png</frameName>
+        <eventName type="setSound">Audio/Effect/kong.ogg</eventName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <eventName type="setMove">16</eventName>
+        <frameName>Sai_NAttack_11.png</frameName>
+        <frameName>Sai_NAttack_12.png</frameName>
+        <frameName>Sai_NAttack_13.png</frameName>
+        <frameName>Sai_NAttack_14.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+        <dateName type="attackType">cBuff</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">6</dateName>
+        <coldName type="coldDown">15</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+       <eventName type="setSound">Audio/Sai/sai_skill1.mp3</eventName>
+       <frameName>Sai_Skill01_05.png</frameName>
+        <eventName type="setDelay">40</eventName>
+       <eventName type="setBuff">17</eventName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+          <dateName type="attackType">Summon</dateName>
+          <dateName type="attackValue">0</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">0</dateName>
+          <coldName type="coldDown">20</coldName>
+          <dateName type="combatPoint">1560</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Sai/sai_skill2.mp3</eventName>
+          <frameName>Sai_Skill02_01.png</frameName>
+          <frameName>Sai_Skill02_02.png</frameName>
+          <eventName type="setMove">16</eventName>
+          <frameName>Sai_Skill02_05.png</frameName>
+          <eventName type="setSound">Audio/Sai/sai_skill2_1.mp3</eventName>
+          <frameName>Sai_Skill02_06.png</frameName>
+          <frameName>Sai_Skill02_07.png</frameName>
+          <eventName type="setSound">Audio/Sai/ink_tiger.mp3</eventName>
+          <eventName type="setMon">Tiger</eventName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+        <dateName type="attackType">cAttack</dateName>
+        <dateName type="attackValue">360</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">25</coldName>
+        <dateName type="combatPoint">2160</dateName>
+        </date>
+        <frame>
+            <frameName>Sai_Skill04_01.png</frameName>
+            <eventName type="setSound">Audio/Sai/sai_skill4.mp3</eventName>
+            <frameName>Sai_Skill04_02.png</frameName>
+            <eventName type="setMon">InkBird</eventName>
+            <frameName>Sai_Skill04_03.png</frameName>
+            <frameName>Sai_Skill04_04.png</frameName>
+            <eventName type="setAttackBox">bf_hit</eventName>
+            <frameName>Sai_Skill04_05.png</frameName>
+            <frameName>Sai_Skill04_06.png</frameName>
+            <frameName>Sai_Skill04_07.png</frameName>
+            <eventName type="setSound">Audio/Sai/sai_skill4_1.mp3</eventName>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+      <dateName type="attackType">cBuff</dateName>
+      <dateName type="attackValue">0</dateName>
+      <dateName type="attackRangeX">0</dateName>
+      <dateName type="attackRangeY">8</dateName>
+      <coldName type="coldDown">1</coldName>
+      <dateName type="combatPoint">4320</dateName>
+     </date>
+     <frame>
+      <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+      <eventName type="setCommand">setInvincible</eventName>
+      <eventName type="setSound">Audio/Sai/sai_skill3.mp3</eventName>
+      <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+      <eventName type="setSkillEffect">smk</eventName>
+      <eventName type="setBuff">18</eventName>
+      <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+        <date>
+        <dateName type="attackType">cAttack</dateName>
+        <dateName type="attackValue">960</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">9120</dateName>
+        </date>
+        <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+        <eventName type="setCommand">setInvincible</eventName>
+        <frameName>Sai_Skill05_001.png</frameName>
+        <eventName type="setOugis">10</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Sai_Skill05_002.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Sai_Skill05_003.png</frameName>
+        <eventName type="setAttackBox">o2_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_o.mp3</eventName>
+        <eventName type="setDelay">20</eventName>
+        <frameName>Sai_Skill05_004.png</frameName>
+        <frameName>Sai_Skill05_005.png</frameName>
+        <frameName>Sai_Skill05_006.png</frameName>
+        <frameName>Sai_Skill05_007.png</frameName>
+        <frameName>Sai_Skill05_008.png</frameName>
+        <eventName type="setSound">Audio/Sai/sai_skill5.mp3</eventName>
+        <eventName type="setMon">InkDragon</eventName>
+        <eventName type="setCommand">reInvincible</eventName>
+        </frame>
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">Summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <frameName>Sai_Skill10_01.png</frameName>
+          <frameName>Sai_Skill10_02.png</frameName>
+          <frameName>Sai_Skill10_03.png</frameName>
+          <frameName>Sai_Skill10_04.png</frameName>
+          <eventName type="setMon">Snake</eventName>
+        </frame>
+    </action>
+   
+     <action value="skill11">
+        <date>
+            <dateName type="attackType">Idle</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+        
+            <frameName>Sai_Skill11_01.png</frameName>
+            <frameName>Sai_Skill11_02.png</frameName>
+            <frameName>Sai_Skill11_03.png</frameName>
+            <frameName>Sai_Skill11_04.png</frameName>
+            <frameName>Sai_Skill11_05.png</frameName>
+            <frameName>Sai_Skill11_06.png</frameName> 
+        </frame>
+    </action>
+
+    <action value="skill12">
+        <date>
+            <dateName type="attackType">Summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <frameName>Sai_Skill12_01.png</frameName>
+          <frameName>Sai_Skill12_02.png</frameName>
+          <frameName>Sai_Skill12_03.png</frameName>
+          <frameName>Sai_Skill12_04.png</frameName>
+          <frameName>Sai_Skill12_05.png</frameName>
+          <frameName>Sai_Skill12_06.png</frameName>
+          <eventName type="setMon">Mouse</eventName>
+        </frame>
+    </action>
+</animation>

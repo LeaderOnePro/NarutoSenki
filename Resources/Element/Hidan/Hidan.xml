@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Hidan</dateName>
+        <dateName type="attackValue">6000</dateName>
+        <dateName type="attackRangeX">63</dateName>
+        <dateName type="attackRangeY">80</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Hidan_Idle_001.png</frameName>
+        <frameName>Hidan_Idle_002.png</frameName>
+        <frameName>Hidan_Idle_003.png</frameName>
+        <frameName>Hidan_Idle_004.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Hidan_Walk_01.png</frameName>
+        <frameName>Hidan_Walk_02.png</frameName>
+        <frameName>Hidan_Walk_03.png</frameName>
+        <frameName>Hidan_Walk_04.png</frameName>
+        <frameName>Hidan_Walk_05.png</frameName>
+        <frameName>Hidan_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Hidan_Hurt_01.png</frameName>
+        <frameName>Hidan_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Hidan/Hidan_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Hidan_AirHurt_001.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Hidan_KnockDown_001.png</frameName>
+           <eventName type="setDelay">10</eventName>
+          <frameName>Hidan_KnockDown_002.png</frameName>
+           <eventName type="setDelay">60</eventName>
+          <frameName>Hidan_KnockDown_003.png</frameName>
+          <frameName>Hidan_KnockDown_004.png</frameName>
+          <frameName>Hidan_KnockDown_005.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Hidan_Float_001.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Hidan_Float_002.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Hidan_Float_003.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Hidan_KnockDown_001.png</frameName>
+          <frameName>Hidan_KnockDown_002.png</frameName>
+          <eventName type="setSound">Audio/Hidan/Hidan_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Hidan_NAttack_001.png</frameName>
+        <frameName>Hidan_NAttack_002.png</frameName>
+        <frameName>Hidan_NAttack_003.png</frameName>
+        <eventName type="setAttackBox">n_hit</eventName>
+         <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <frameName>Hidan_NAttack_004.png</frameName>
+        <frameName>Hidan_NAttack_005.png</frameName>
+        <frameName>Hidan_NAttack_006.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Hidan_NAttack_007.png</frameName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Hidan_NAttack_008.png</frameName>
+        <frameName>Hidan_NAttack_009.png</frameName>
+        <eventName type="setSound">Audio/Effect/kong.ogg</eventName>
+        <frameName>Hidan_NAttack_010.png</frameName>
+        <frameName>Hidan_NAttack_011.png</frameName>
+        <eventName type="setSound">Audio/Hidan/Hidan_combo.mp3</eventName>
+        <eventName type="setMove">16</eventName>
+        <frameName>Hidan_NAttack_012.png</frameName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <eventName type="setSound">Audio/Effect/kong.ogg</eventName>
+        <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+      <dateName type="attackType">Summon</dateName>
+      <dateName type="attackValue">0</dateName>
+      <dateName type="attackRangeX">0</dateName>
+      <dateName type="attackRangeY">0</dateName>
+      <coldName type="coldDown">10</coldName>
+      <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+      <eventName type="setSound">Audio/Hidan/Hidan_skill1.mp3</eventName>
+      <eventName type="setCommand">setInvincible</eventName>
+      <frameName>Hidan_Skill01_001.png</frameName>
+      <eventName type="setDelay">10</eventName>
+      <frameName>Hidan_Skill01_002.png</frameName>
+      <eventName type="setMon">CircleMark</eventName>
+      <frameName>Hidan_Skill01_003.png</frameName>
+      <frameName>Hidan_Skill01_004.png</frameName>
+      <frameName>Hidan_Skill01_005.png</frameName>
+      <eventName type="setDelay">10</eventName>
+      <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+    <action value="skill02">
+        <date>
+          <dateName type="attackType">cAttack</dateName>
+          <dateName type="attackValue">1460</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">48</dateName>
+          <coldName type="coldDown">15</coldName>
+          <dateName type="combatPoint">1460</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Hidan/Hidan_skill2.mp3</eventName>
+          <frameName>Hidan_Skill02_001.png</frameName>
+          <frameName>Hidan_Skill02_002.png</frameName>
+          <frameName>Hidan_Skill02_003.png</frameName>
+          <frameName>Hidan_Skill02_004.png</frameName>
+          <eventName type="setAttackBox">o_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/blade_damage2.mp3</eventName>
+          <frameName>Hidan_Skill02_005.png</frameName>
+        </frame>
+    </action>
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">360</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">25</coldName>
+             <dateName type="combatPoint">2160</dateName>
+        </date>
+        <frame>
+        <eventName type="setSound">Audio/Hidan/Hidan_skill3.mp3</eventName>
+        <frameName>Hidan_Skill03_001.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+        <frameName>Hidan_Skill03_002.png</frameName>
+        <frameName>Hidan_Skill03_003.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <frameName>Hidan_Skill03_004.png</frameName>
+        <frameName>Hidan_Skill03_001.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+        <frameName>Hidan_Skill03_002.png</frameName>
+        <frameName>Hidan_Skill03_003.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <frameName>Hidan_Skill03_004.png</frameName>
+        <frameName>Hidan_Skill03_001.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+        <frameName>Hidan_Skill03_002.png</frameName>
+        <frameName>Hidan_Skill03_003.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <frameName>Hidan_Skill03_004.png</frameName>
+       </frame>
+    </action>
+   <action value="skill04">
+     <date>
+    <dateName type="attackType">cAttack</dateName>
+        <dateName type="attackValue">760</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">3800</dateName>
+     </date>
+     <frame>
+          <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+          <frameName>Hidan_Skill04_001.png</frameName>
+          <frameName>Hidan_Skill04_002.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setMove">32</eventName>
+          <frameName>Hidan_Skill04_003.png</frameName>
+           <eventName type="setSound">Audio/Hidan/Hidan_skill4.mp3</eventName>
+          <eventName type="setMon">Wave</eventName>
+          <frameName>Hidan_Skill04_004.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Hidan_Skill04_005.png</frameName>
+          <frameName>Hidan_Skill04_006.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Hidan_Skill04_007.png</frameName>
+          <frameName>Hidan_Skill04_008.png</frameName>
+          <frameName>Hidan_Skill04_009.png</frameName>
+          <frameName>Hidan_Skill04_010.png</frameName>
+          <eventName type="setAttackBox">ab_hit</eventName>
+          <eventName type="setSound">Audio/Hidan/Hidan_skill4_1.mp3</eventName>
+          <frameName>Hidan_Skill04_011.png</frameName>
+          <eventName type="setAttackBox">ab_hit</eventName>
+          <frameName>Hidan_Skill04_012.png</frameName>
+          <frameName>Hidan_Skill04_013.png</frameName>
+          <eventName type="setAttackBox">b_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/blade_damage2.mp3</eventName>
+          <frameName>Hidan_Skill04_014.png</frameName>
+          <frameName>Hidan_Skill04_015.png</frameName>
+     </frame>
+   </action>
+    <action value="skill05">
+     <date>
+       <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">15</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+      <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+      <frameName>Hidan_Skill05_001.png</frameName>
+      <eventName type="setCommand">setInvincible</eventName>
+      <frameName>Hidan_Skill05_002.png</frameName>
+      <frameName>Hidan_Skill05_003.png</frameName>
+      <frameName>Hidan_Skill05_004.png</frameName>
+      <frameName>Hidan_Skill05_005.png</frameName>
+      <frameName>Hidan_Skill05_006.png</frameName>
+      <eventName type="setOugis">10</eventName>
+      <frameName>Hidan_Skill05_007.png</frameName>
+      <eventName type="setBuff">18</eventName>
+      <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">Idle</dateName>
+            <dateName type="attackValue">660</dateName>
+            <dateName type="attackRangeX">16</dateName>
+            <dateName type="attackRangeY">32</dateName>
+            <coldName type="coldDown">10</coldName>
+        </date>
+        <frame>
+            <frameName>Hidan_Skill10_001.png</frameName>
+            <eventName type="setDelay">10</eventName>
+             <frameName>Hidan_Skill10_002.png</frameName>
+             <eventName type="setDelay">10</eventName>
+        </frame>
+    </action>
+    <action value="skill11">
+        <date>
+            <dateName type="attackType">Walk</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">15</coldName>
+        </date>
+        <frame>
+            <frameName>Hidan_Run_01.png</frameName>
+             <eventName type="setShadow">10</eventName> 
+            <frameName>Hidan_Run_02.png</frameName>
+            <frameName>Hidan_Run_03.png</frameName>
+             <eventName type="setShadow">10</eventName> 
+            <frameName>Hidan_Run_04.png</frameName>
+            <frameName>Hidan_Run_05.png</frameName>
+             <eventName type="setShadow">10</eventName> 
+            <frameName>Hidan_Run_06.png</frameName>
+        </frame>
+
+    </action>
+    <action value="skill12">
+        <date>
+            <dateName type="attackType">nAttack</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+          <frameName>Hidan_Skill12_001.png</frameName>
+          <frameName>Hidan_Skill12_002.png</frameName>
+          <frameName>Hidan_Skill12_003.png</frameName>
+          <frameName>Hidan_Skill12_004.png</frameName>
+          <frameName>Hidan_Skill12_005.png</frameName>
+          <frameName>Hidan_Skill12_006.png</frameName>
+          <eventName type="setCommand">setCounter</eventName>
+        </frame>
+    </action>
+</animation>

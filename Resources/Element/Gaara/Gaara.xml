@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Gaara</dateName>
+        <dateName type="attackValue">5000</dateName>
+        <dateName type="attackRangeX">29</dateName>
+        <dateName type="attackRangeY">74</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Gaara_Idle_01.png</frameName>
+        <frameName>Gaara_Idle_02.png</frameName>
+        <frameName>Gaara_Idle_03.png</frameName>
+        <frameName>Gaara_Idle_04.png</frameName>
+        <frameName>Gaara_Idle_05.png</frameName>
+        <frameName>Gaara_Idle_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      
+      <frame>
+        <frameName>Gaara_Walk_01.png</frameName>
+        <frameName>Gaara_Walk_02.png</frameName>
+        <frameName>Gaara_Walk_03.png</frameName>
+        <frameName>Gaara_Walk_04.png</frameName>
+        <frameName>Gaara_Walk_05.png</frameName>
+        <frameName>Gaara_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Gaara_Hurt_01.png</frameName>
+        <frameName>Gaara_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Gaara/Gaara_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Gaara_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Gaara_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Gaara_KnockDown_02.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Gaara_KnockDown_03.png</frameName>
+           <eventName type="setDelay">30</eventName>
+         
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Gaara_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Gaara_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Gaara_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Gaara_KnockDown_01.png</frameName>
+          <frameName>Gaara_KnockDown_02.png</frameName>
+          <eventName type="setSound">Audio/Gaara/Gaara_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Gaara_NAttack_01.png</frameName>
+        <frameName>Gaara_NAttack_02.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Gaara_NAttack_03.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Gaara_NAttack_04.png</frameName>
+        <frameName>Gaara_NAttack_05.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Gaara_NAttack_06.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Gaara_NAttack_07.png</frameName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Gaara_NAttack_08.png</frameName>
+        <frameName>Gaara_NAttack_09.png</frameName>
+         <eventName type="setSound">Audio/Gaara/Gaara_combo.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Gaara_NAttack_10.png</frameName>
+         <frameName>Gaara_NAttack_11.png</frameName>
+        <frameName>Gaara_NAttack_12.png</frameName>
+        <frameName>Gaara_NAttack_13.png</frameName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <frameName>Gaara_NAttack_14.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+      <dateName type="attackType">cAttack</dateName>
+      <dateName type="attackValue">460</dateName>
+      <dateName type="attackRangeX">0</dateName>
+      <dateName type="attackRangeY">48</dateName>
+      <coldName type="coldDown">10</coldName>
+      <dateName type="combatPoint">1380</dateName>
+     </date>
+     <frame>
+        <frameName>Gaara_Skill01_01.png</frameName>
+        <eventName type="setSound">Audio/Gaara/Gaara_skill0.mp3</eventName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Gaara_Skill01_02.png</frameName>
+        <frameName>Gaara_Skill01_03.png</frameName>
+        <eventName type="setSound">Audio/Gaara/Gaara_skill0_1.mp3</eventName>
+        <frameName>Gaara_Skill01_04.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Gaara_Skill01_05.png</frameName>
+        <frameName>Gaara_Skill01_06.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Gaara_Skill01_05.png</frameName>
+        <frameName>Gaara_Skill01_04.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Gaara_Skill01_03.png</frameName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+		  <dateName type="attackType">summon</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">16</dateName>
+       <dateName type="attackRangeY">32</dateName>
+       <coldName type="coldDown">15</coldName>  
+        <dateName type="combatPoint">1560</dateName>
+        </date>
+        <frame>
+       <frameName>Gaara_Skill03_01.png</frameName>
+       <eventName type="setSound">Audio/Gaara/Gaara_skill2.mp3</eventName>
+        <frameName>Gaara_Skill03_02.png</frameName>
+        <frameName>Gaara_Skill03_03.png</frameName>
+        <eventName type="setMon">SandHand</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Gaara_Skill03_04.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">Summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">25</coldName>
+            <dateName type="combatPoint">1980</dateName>
+        </date>
+        <frame>
+          <frameName>Gaara_Skill02_001.png</frameName>
+          <eventName type="setSound">Audio/Gaara/Gaara_skill3.mp3</eventName>
+           <eventName type="setMon">SandBall</eventName>
+          <frameName>Gaara_Skill02_002.png</frameName>
+          <frameName>Gaara_Skill02_003.png</frameName>         
+          <frameName>Gaara_Skill02_004.png</frameName>
+          <frameName>Gaara_Skill02_005.png</frameName>
+          <frameName>Gaara_Skill02_006.png</frameName>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">Summon</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">3300</dateName>
+     </date>
+     <frame>
+          <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+          <frameName>Gaara_Skill06_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Gaara_Skill06_02.png</frameName>
+          <frameName>Gaara_Skill06_03.png</frameName>
+          <frameName>Gaara_Skill06_04.png</frameName>
+          <eventName type="setMon">Sabaku</eventName>
+          <frameName>Gaara_Skill06_05.png</frameName>
+          <eventName type="setSound">Audio/Gaara/Gaara_skill5.mp3</eventName>
+          <frameName>Gaara_Skill06_06.png</frameName>
+          <frameName>Gaara_Skill06_07.png</frameName>
+          <frameName>Gaara_Skill06_08.png</frameName>
+          <frameName>Gaara_Skill06_09.png</frameName>
+          <frameName>Gaara_Skill06_10.png</frameName>
+          <frameName>Gaara_Skill06_08.png</frameName>
+          <frameName>Gaara_Skill06_09.png</frameName>
+          <frameName>Gaara_Skill06_10.png</frameName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+
+        <date>
+        <dateName type="attackType">cBuff</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">12</dateName>
+        <coldName type="coldDown">1</coldName>
+         <dateName type="combatPoint">8000</dateName>
+        </date>
+         <frame>
+      <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+      <frameName>Gaara_Skill06_06.png</frameName>
+       <eventName type="setCommand">setInvincible</eventName>
+      <frameName>Gaara_Skill06_07.png</frameName>
+      <eventName type="setOugis">10</eventName>
+      <frameName>Gaara_Skill06_08.png</frameName>
+      <eventName type="setSkillEffect">smk</eventName>
+      <eventName type="setBuff">17</eventName>
+       <eventName type="setCommand">reInvincible</eventName>
+      </frame>
+
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+        <action value="skill10">
+        <date>
+        <dateName type="attackType">Idle</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">0</dateName>
+        <coldName type="coldDown">10</coldName>
+        </date>
+
+        <frame>
+        <frameName>Gaara_Skill10_01.png</frameName>
+        <frameName>Gaara_Skill10_02.png</frameName>
+        <frameName>Gaara_Skill10_03.png</frameName> 
+        <frameName>Gaara_Skill10_04.png</frameName> 
+        <frameName>Gaara_Skill10_05.png</frameName> 
+        <frameName>Gaara_Skill10_06.png</frameName> 
+        </frame>
+        </action>
+
+        <action value="skill10">
+        <date>
+        <dateName type="attackType">Walk</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">0</dateName>
+        <coldName type="coldDown">10</coldName>
+        </date>
+        <frame>
+          <frameName>Gaara_Skill10_01.png</frameName>
+          <frameName>Gaara_Skill10_02.png</frameName>
+          <frameName>Gaara_Skill10_03.png</frameName> 
+          <frameName>Gaara_Skill10_04.png</frameName> 
+          <frameName>Gaara_Skill10_05.png</frameName>  
+          <frameName>Gaara_Skill10_06.png</frameName> 
+        </frame>
+        </action>
+
+        <action value="skill10">
+        <date>
+        <dateName type="attackType">Summon</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">0</dateName>
+        <coldName type="coldDown">10</coldName>
+        </date>
+        <frame>
+        <frameName>Gaara_Skill12_001.png</frameName>
+        <eventName type="setSound">Audio/Gaara/Gaara_skill1.mp3</eventName>
+        <eventName type="setMon">SandWave</eventName>
+        <frameName>Gaara_Skill12_002.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Gaara_Skill12_003.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Gaara_Skill12_004.png</frameName>
+        <frameName>Gaara_Skill12_005.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Gaara_Skill12_006.png</frameName>
+        </frame>
+        </action>
+   
+</animation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="96" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tile4" tilewidth="32" tileheight="32">
+  <image source="tile4.png" width="256" height="1024"/>
+ </tileset>
+ <layer name="floor" width="96" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3L10bHcRyA4d9xkyZNmjT5t2jSpEmTJk2aNGnSvM0upecevod9Xp7DN8uiKIqi/9hPlv2+8cAVJ+yxwRIzjDFAN63UU0kx8af937xyzyXH7LLOItOM0k8XLdRRQVH8yf8XL9xxwRE7rLHAFCP00UkztZRTGH/y/8kzt5xzyDarzDPJML100EQNZRTEn/x/8MQNZxywxQpzTDBED+00Uk0p+fEn/+88cs0p+2yyzCzjDJKjjQaqKCEv/uT/DwyPS48ADwAA
+  </data>
+ </layer>
+ <layer name="块层 4" width="96" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QSwqDQAAE0Tq6azUG/CQQo7lqahYeQZShC3r/aEi194RmcA/Xu8617mrXkRY0oQ2NaC3manr79cstbnaTG2/0vxY0oQ2NaC3mavr59e4293Wr+9zofy1oQhsa0VrMKaWUUkrphP4/wzjoAA8AAA==
+  </data>
+ </layer>
+ <layer name="块层 3" width="96" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2PSwrAUAwCvf8pSn+L/s5YoRd4KQFdOJCNDEqAjwOYZh4GcfNVu13+yWwp9Lj5qt0u/2K2FnrcfNVul38z2wo9br5qt8t/mO2FHjdftav6K4QQQgj/eQG1E0mjAA8AAA==
+  </data>
+ </layer>
+ <layer name="rock" width="96" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2QNw4CMRQF9+ivJkpEiXgHUrGEglSwwJkYiwatwMZiJbb4I01jP9vvO0mMMlHBKtawjg1s/rXRe8ra89deLWxjB7vYw37BHYugrD1je+3xgEc84QCHOMIxTnD6kp/hHBe4xJXnbvZERmTFGXFWvu68L3qIPtoHsqGesV0d+b/w8eluX68zM+VnvLCe4RVvgTcdKa5xg1vcebLsiYzIijNKA3/K+6KHsmcvb/YbYro6Yv4i9m7HnZmKntEwDMMwjHgeaOZmsAAPAAA=
+  </data>
+ </layer>
+ <objectgroup name="object" width="96" height="10">
+  <object name="SpawnPoint01" x="352" y="160" width="32" height="32"/>
+  <object name="SpawnPoint02" x="352" y="256" width="32" height="32"/>
+  <object name="SpawnPoint03" x="304" y="208" width="32" height="32"/>
+  <object name="SpawnPoint04" x="2688" y="160" width="32" height="32"/>
+  <object name="SpawnPoint05" x="2736" y="208" width="32" height="32"/>
+  <object name="SpawnPoint06" x="2688" y="256" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="meta" width="96" height="10">
+  <object name="KonohaTower2" x="1056" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="KonohaTower1" x="544" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="KonohaCenter" x="160" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="AkatsukiTower2" x="1920" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="AkatsukiTower1" x="2432" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="AkatsukiCenter" x="2816" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

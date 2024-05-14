@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+   <date>
+      <dateName type="attackType">Shoryu</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Shoryu_Move_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+          <frameName>Shoryu_Move_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Shoryu_Move_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+      <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">1660</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Shoryu_Move_001.png</frameName>
+        <frameName>Shoryu_Move_002.png</frameName>
+        <frameName>Shoryu_Move_003.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Shoryu_Move_004.png</frameName>
+        <frameName>Shoryu_Move_005.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Shoryu_Move_006.png</frameName>
+        <frameName>Shoryu_Move_007.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Shoryu_Move_008.png</frameName>
+        <frameName>Shoryu_Move_009.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setDelay">10</eventName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

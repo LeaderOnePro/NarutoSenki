@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Lee</dateName>
+        <dateName type="attackValue">5500</dateName>
+        <dateName type="attackRangeX">63</dateName>
+        <dateName type="attackRangeY">72</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Lee_Idle_01.png</frameName>
+        <frameName>Lee_Idle_02.png</frameName>
+        <frameName>Lee_Idle_03.png</frameName>
+        <frameName>Lee_Idle_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Lee_Walk_01.png</frameName>
+        <frameName>Lee_Walk_02.png</frameName>
+        <frameName>Lee_Walk_03.png</frameName>
+        <frameName>Lee_Walk_04.png</frameName>
+        <frameName>Lee_Walk_05.png</frameName>
+        <frameName>Lee_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Lee_Hurt_01.png</frameName>
+        <frameName>Lee_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Lee/Lee_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Lee_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Lee_KnockDown_01.png</frameName>
+          <frameName>Lee_KnockDown_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Lee_KnockDown_03.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Lee_KnockDown_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Lee_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Lee_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Lee_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Lee_KnockDown_01.png</frameName>
+          <frameName>Lee_KnockDown_02.png</frameName>
+          <frameName>Lee_KnockDown_03.png</frameName>
+          <eventName type="setSound">Audio/Lee/Lee_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">16</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+
+        <frameName>Lee_NAttack_01.png</frameName>
+        <frameName>Lee_NAttack_02.png</frameName>
+        <frameName>Lee_NAttack_03.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Lee_NAttack_04.png</frameName>
+        <frameName>Lee_NAttack_05.png</frameName>
+        <frameName>Lee_NAttack_06.png</frameName>
+         <eventName type="setMove">8</eventName>
+        <frameName>Lee_NAttack_07.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Lee_NAttack_08.png</frameName>
+        <frameName>Lee_NAttack_09.png</frameName>
+        <frameName>Lee_NAttack_10.png</frameName>
+        <frameName>Lee_NAttack_11.png</frameName>
+        <eventName type="setSound">Audio/Lee/Lee_combo.mp3</eventName>
+        <eventName type="setMove">16</eventName>
+        <frameName>Lee_NAttack_12.png</frameName>
+        <frameName>Lee_NAttack_13.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo3.mp3</eventName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <frameName>Lee_NAttack_14.png</frameName>
+         <frameName>Lee_NAttack_15.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+
+      <date>
+      <dateName type="attackType">cBuff</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">15</coldName>
+             <dateName type="combatPoint">0</dateName>
+        </date>
+        <frame>
+        <eventName type="setSound">Audio/Lee/Lee_skill1.mp3</eventName>
+        <frameName>Lee_Skill03_001.png</frameName>
+        <frameName>Lee_Skill03_002.png</frameName>
+        <frameName>Lee_Skill03_003.png</frameName>
+          <eventName type="setBuff">17</eventName>
+        </frame>
+    
+   </action>
+
+    <action value="skill02">
+          <date>
+      <dateName type="attackType">aAttack</dateName>
+       <dateName type="attackValue">560</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">15</coldName>
+        <dateName type="combatPoint">1120</dateName>
+     </date>
+     <frame>
+          <eventName type="setSound">Audio/Lee/Lee_skill2.mp3</eventName>
+          <frameName>Lee_Skill01_001.png</frameName>
+          <frameName>Lee_Skill01_002.png</frameName>
+          <eventName type="setChargeB">96</eventName>
+          <frameName>Lee_Skill01_003.png</frameName>
+          <frameName>Lee_Skill01_004.png</frameName>
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+          <frameName>Lee_Skill01_005.png</frameName>
+          <frameName>Lee_Skill01_002.png</frameName>
+          <eventName type="setChargeB">96</eventName>
+          <frameName>Lee_Skill01_003.png</frameName>
+          <frameName>Lee_Skill01_004.png</frameName>
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+          <frameName>Lee_Skill01_006.png</frameName>
+          <frameName>Lee_Skill01_007.png</frameName>
+     </frame>
+    </action>
+
+    <action value="skill03">
+       <date>
+        <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">360</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">25</coldName>
+            <dateName type="combatPoint">2520</dateName>   
+        </date>
+        <frame>
+          <frameName>Lee_Skill02_001.png</frameName>
+          <frameName>Lee_Skill02_002.png</frameName>
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setSound">Audio/Lee/Lee_skill3_2.mp3</eventName>
+          <frameName>Lee_Skill02_003.png</frameName>
+            <eventName type="setDSound">Audio/Lee/Lee_skill3_3.mp3</eventName>
+          <frameName>Lee_Skill02_004.png</frameName>
+          <eventName type="setAttackBox">c_hit</eventName>
+          <frameName>Lee_Skill02_005.png</frameName>
+          <frameName>Lee_Skill02_006.png</frameName>
+          <eventName type="setAttackBox">c_hit</eventName>
+           <eventName type="setDSound">Audio/Lee/Lee_skill3_3.mp3</eventName>
+          <frameName>Lee_Skill02_007.png</frameName>
+          <frameName>Lee_Skill02_008.png</frameName>
+          <eventName type="setAttackBox">c_hit</eventName>
+          <frameName>Lee_Skill02_009.png</frameName>
+            <eventName type="setDSound">Audio/Lee/Lee_skill3_3.mp3</eventName>
+          <frameName>Lee_Skill02_010.png</frameName>
+          <eventName type="setAttackBox">f_hit</eventName>
+          <frameName>Lee_Skill02_011.png</frameName>
+          <eventName type="setJump">true</eventName>
+          <frameName>Lee_Skill02_012.png</frameName>
+          <eventName type="setSound">Audio/Lee/Lee_skill3_1.mp3</eventName>
+          <eventName type="setDelay">10</eventName>
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+          <frameName>Lee_Skill02_013.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+          <frameName>Lee_Skill02_014.png</frameName>
+          <frameName>Lee_Skill02_015.png</frameName>
+          <frameName>Lee_Skill02_016.png</frameName>
+          <eventName type="setDelay">20</eventName>
+        </frame>
+
+    
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">aAttack</dateName>
+       <dateName type="attackValue">1560</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">3120</dateName>  
+     </date>
+     <frame>
+      <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+      <frameName>Lee_Skill04_01.png</frameName>
+      <frameName>Lee_Skill04_02.png</frameName>
+      <eventName type="setSound">Audio/Lee/Lee_skill4_1.mp3</eventName>
+      <frameName>Lee_Skill04_001.png</frameName>
+       <eventName type="setCommand">setInvincible</eventName>
+      <eventName type="setAttackBox">ct_hit</eventName>
+      <frameName>Lee_Skill04_002.png</frameName>
+       <eventName type="setDelay">10</eventName>
+      <frameName>Lee_Skill04_003.png</frameName>
+      <frameName>Lee_Skill04_004.png</frameName>
+      <frameName>Lee_Skill04_005.png</frameName>
+      <frameName>Lee_Skill04_006.png</frameName>
+      <frameName>Lee_Skill04_007.png</frameName>
+      <frameName>Lee_Skill04_008.png</frameName>
+      <eventName type="setSound">Audio/Lee/Lee_skill4_2.mp3</eventName>
+      <frameName>Lee_Skill04_009.png</frameName>
+      <frameName>Lee_Skill04_010.png</frameName>
+       <eventName type="setCommand">reInvincible</eventName>
+      <frameName>Lee_Skill04_011.png</frameName>
+      <frameName>Lee_Skill04_012.png</frameName>
+       <eventName type="setSound">Audio/Effect/break_sound3.mp3</eventName>
+       <eventName type="setAttackBox">f_hit</eventName>
+      <frameName>Lee_Skill04_013.png</frameName>
+      <frameName>Lee_Skill04_014.png</frameName>
+
+     </frame>
+   </action>
+   
+   <action value="skill05">
+      <date>
+       <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">660</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">1</coldName>
+         <dateName type="combatPoint">8000</dateName>  
+      </date>
+      <frame>
+       <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+            <frameName>Lee_Skill06_001.png</frameName>
+             <eventName type="setCommand">setInvincible</eventName>
+            <eventName type="setDSound">Audio/Effect/damage_k.mp3</eventName>
+            <frameName>Lee_Skill06_002.png</frameName>
+            <eventName type="setSound">Audio/Lee/Lee_skill5_1.mp3</eventName>
+            <frameName>Lee_Skill06_003.png</frameName>
+            <frameName>Lee_Skill06_004.png</frameName>
+            <eventName type="setSound">Audio/Lee/Lee_skill5_2.mp3</eventName>
+            <eventName type="setCommand">findTarget</eventName> 
+            <eventName type="setCommand">setTransport</eventName>
+            <eventName type="setAttackBox">f_hit</eventName>   
+            <frameName>Lee_Skill05_001.png</frameName>
+            <eventName type="setSound">Audio/Lee/Lee_skill10.mp3</eventName>
+            <eventName type="setAttackBox">ac_hit</eventName>
+            <frameName>Lee_Skill05_002.png</frameName>
+            <frameName>Lee_Skill05_003.png</frameName>
+            <eventName type="setAttackBox">ac_hit</eventName>
+            <eventName type="setSound">Audio/Effect/damage_i.mp3</eventName>
+            <frameName>Lee_Skill05_004.png</frameName>
+            <frameName>Lee_Skill05_005.png</frameName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <eventName type="setSound">Audio/Effect/damage_i.mp3</eventName>
+            <frameName>Lee_Skill05_006.png</frameName>
+            <frameName>Lee_Skill05_007.png</frameName>
+            <eventName type="setAttackBox">ac_hit</eventName>
+            <eventName type="setSound">Audio/Effect/damage_i.mp3</eventName>
+            <frameName>Lee_Skill05_008.png</frameName>
+            <frameName>Lee_Skill05_009.png</frameName>
+            <eventName type="setAttackBox">ac_hit</eventName>
+            <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+            <frameName>Lee_Skill05_010.png</frameName>
+            <frameName>Lee_Skill05_011.png</frameName>
+            <eventName type="setAttackBox">ac_hit</eventName>
+            <eventName type="setSound">Audio/Effect/damage_i.mp3</eventName>
+            <frameName>Lee_Skill05_012.png</frameName>
+            <frameName>Lee_Skill05_013.png</frameName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <eventName type="setSound">Audio/Effect/damage_i.mp3</eventName>
+            <frameName>Lee_Skill05_014.png</frameName>
+            <frameName>Lee_Skill05_015.png</frameName>
+            <eventName type="setOugis">10</eventName>
+            <frameName>Lee_Skill05_016.png</frameName>
+            <frameName>Lee_Skill05_017.png</frameName>
+            <frameName>Lee_Skill05_018.png</frameName>
+            <eventName type="setSound">Audio/Effect/break_sound3.mp3</eventName>
+            <eventName type="setMon">LeeBom</eventName>
+            <frameName>Lee_Skill05_019.png</frameName>
+            <eventName type="setDelay">30</eventName>
+            <frameName>Lee_Skill05_020.png</frameName>
+             <eventName type="setCommand">reInvincible</eventName>
+    </frame>
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <frame></frame>
+    </action>
+
+    <action value="skill11">
+        <frame></frame>
+    </action>
+    <action value="skill12">
+      <frame></frame>
+    </action>
+   
+</animation>

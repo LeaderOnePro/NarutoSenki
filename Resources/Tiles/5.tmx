@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="96" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tile5" tilewidth="32" tileheight="32">
+  <image source="tile5.png" width="256" height="1024"/>
+ </tileset>
+ <layer name="floor" width="96" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3N56adURSF4f077XBaSCWVVFJJJZVUUkmXSiqppJJ6m++l5OG7jG8vHpa15hxjMpme6Zme6ZmeMZ6ZyeTBStazld0c5DhnucxN7vOMN3ziB/8Guectf5nJbHaym4xkJTPZ6UhXOpsZjLp/hYxF1rGFXRzgGGe4xA3u8ZTXfOQ7fwe55y1/mclsdrKbjGQlM9npSFeLQ/fo+5fLWGAtm9nJfo5ymotc5y5PeMUHvvFnkHve8peZzGYnu8lIVjKTnY50tTB0j75/mYx51rCJHezjCKe4wDXu8JiXvOcrvwe55y1/mclsdrKbjGQlM9npSFfzQ/fo+5fKmGM1G9nOXg5zkvNc5TaPeME7vvBrkHve8peZzGYnu8lIVjKTnY50NTd0j75/iYxZVrGBbezhECc4xxVu8ZDnvOUzPwe55y1/mclsdrKbjGQlM9npSFezQ/fo+/8DnHGrDwAPAAA=
+  </data>
+ </layer>
+ <objectgroup name="object" width="96" height="10">
+  <object name="SpawnPoint01" x="352" y="160" width="32" height="32"/>
+  <object name="SpawnPoint02" x="352" y="256" width="32" height="32"/>
+  <object name="SpawnPoint03" x="304" y="208" width="32" height="32"/>
+  <object name="SpawnPoint04" x="2688" y="160" width="32" height="32"/>
+  <object name="SpawnPoint05" x="2736" y="208" width="32" height="32"/>
+  <object name="SpawnPoint06" x="2688" y="256" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="meta" width="96" height="10">
+  <object name="KonohaTower2" x="1056" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="KonohaTower1" x="544" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="KonohaCenter" x="160" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="AkatsukiTower2" x="1920" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="AkatsukiTower1" x="2432" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+  <object name="AkatsukiCenter" x="2816" y="144" width="96" height="128">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="块层 2" width="96" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2SSwrCMBRF31K7FNfgb+BvASotqOhMQR21jtQFZCmeQAoSUtO0FQfmwBkUcl+axxWJRCIlfRzgEEc4/tGMLue0nfXN7Fqkt8Il6u8JTnGGc1yYc5lIcsAT6u+niLrhFe07XTPIqsxx9hNV/9KENrNcWfag6rzJd++OvW9xY/ZfRcre93g0+39wb4GXGjslo8iq1DpLNinMvBJ6IPRB98KLKx+C3b2Q+VVv8s3sijv35ngO7PQ7ZJPceh89EPqge9EoH4Kve03m1+1zJBKJRP6bFxOAFuwADwAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">MaskFudon</dateName>
+        <dateName type="attackValue">20000</dateName>
+        <dateName type="attackRangeX">66</dateName>
+        <dateName type="attackRangeY">90</dateName>
+        <coldName type="coldDown">320</coldName>
+      </date>
+      <frame>
+        <frameName>MaskFudon_Idle_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>MaskFudon_Walk_001.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>MaskFudon_Walk_002.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>MaskFudon_Walk_003.png</frameName>
+        <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>MaskFudon_Idle_001.png</frameName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+            <frameName>MaskFudon_Idle_001.png</frameName>
+       </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+            <frameName>MaskFudon_Idle_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+           <frameName>MaskFudon_Idle_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>MaskFudon_Idle_001.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">100</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>MaskFudon_Walk_001.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>MaskFudon_Walk_002.png</frameName>
+        <eventName type="setAttackBox">a_hit</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>MaskFudon_Walk_003.png</frameName>
+        <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">cAttack</dateName>
+       <dateName type="attackValue">960</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">10</coldName>
+     </date>
+     <frame>
+        <frameName>MaskFudon_Move_001.png</frameName>
+        <frameName>MaskFudon_Move_002.png</frameName>
+        <frameName>MaskFudon_Move_003.png</frameName>
+        <eventName type="setAttackBox">o_hit</eventName>
+        <frameName>MaskFudon_Move_004.png</frameName>
+        <frameName>MaskFudon_Move_005.png</frameName>
+         <eventName type="setAttackBox">o_hit</eventName>
+        <frameName>MaskFudon_Move_006.png</frameName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+		    <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">560</dateName>
+            <dateName type="attackRangeX">32</dateName>
+            <dateName type="attackRangeY">32</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">cAttack</dateName>
+            <dateName type="attackValue">300</dateName>
+            <dateName type="attackRangeX">32</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">1</coldName>
+        </date>
+        <frame>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">oAttack</dateName>
+       <dateName type="attackValue">660</dateName>
+       <dateName type="attackRangeX">64</dateName>
+       <dateName type="attackRangeY">32</dateName>
+       <coldName type="coldDown">1</coldName>
+     </date>
+     <frame>
+     </frame>
+   </action>
+   
+    <action value="skill05">
+     <date>
+       <dateName type="attackType">oAttack</dateName>
+       <dateName type="attackValue">660</dateName>
+       <dateName type="attackRangeX">64</dateName>
+       <dateName type="attackRangeY">32</dateName>
+       <coldName type="coldDown">1</coldName>
+     </date>
+     <frame>
+     </frame>
+   </action>
+   
+</animation>

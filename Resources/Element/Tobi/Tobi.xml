@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Tobi</dateName>
+        <dateName type="attackValue">5500</dateName>
+        <dateName type="attackRangeX">63</dateName>
+        <dateName type="attackRangeY">80</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Tobi_Idle_001.png</frameName>
+        <frameName>Tobi_Idle_002.png</frameName>
+        <frameName>Tobi_Idle_003.png</frameName>
+        <frameName>Tobi_Idle_004.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Tobi_Walk_01.png</frameName>
+        <frameName>Tobi_Walk_02.png</frameName>
+        <frameName>Tobi_Walk_03.png</frameName>
+        <frameName>Tobi_Walk_04.png</frameName>
+        <frameName>Tobi_Walk_05.png</frameName>
+        <frameName>Tobi_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Tobi_Hurt_01.png</frameName>
+        <frameName>Tobi_Hurt_02.png</frameName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Tobi_AirHurt_001.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+            <frameName>Tobi_Float_003.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>Tobi_KnockDown_001.png</frameName>
+            <eventName type="setDelay">60</eventName>
+            <frameName>Tobi_KnockDown_002.png</frameName>
+            <frameName>Tobi_KnockDown_003.png</frameName>
+            <frameName>Tobi_KnockDown_004.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Tobi_Float_001.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Tobi_Float_002.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Tobi_Float_003.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+         <frameName>Tobi_Float_003.png</frameName>
+          <frameName>Tobi_KnockDown_001.png</frameName>
+          <eventName type="setSound">Audio/Tobi/Tobi_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">80</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+          <frameName>Tobi_NAttack_001.png</frameName>
+          <frameName>Tobi_NAttack_002.png</frameName>
+          <frameName>Tobi_NAttack_003.png</frameName>
+          <eventName type="setAttackBox">n_hit</eventName>
+          <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+          <frameName>Tobi_NAttack_004.png</frameName>
+          <frameName>Tobi_NAttack_005.png</frameName>
+          <frameName>Tobi_NAttack_006.png</frameName>
+          <eventName type="setMove">8</eventName>
+          <frameName>Tobi_NAttack_007.png</frameName>
+          <eventName type="setSound">Audio/Effect/kong.ogg</eventName>
+          <eventName type="setAttackBox">n_hit</eventName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Tobi_NAttack_008.png</frameName>
+          <frameName>Tobi_NAttack_009.png</frameName>
+          <frameName>Tobi_NAttack_010.png</frameName>
+          <frameName>Tobi_NAttack_011.png</frameName>
+          <eventName type="setSound">Audio/Tobi/Tobi_combo.mp3</eventName>
+          <frameName>Tobi_NAttack_012.png</frameName>
+          <eventName type="setMove">16</eventName>
+          <eventName type="setAttackBox">l_hit</eventName>
+          <eventName type="setSound">Audio/Effect/combo3.mp3</eventName>
+          <frameName>Tobi_NAttack_013.png</frameName>
+          <eventName type="setDelay">20</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">aAttack</dateName>
+       <dateName type="attackValue">460</dateName>
+       <dateName type="attackRangeX">16</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">10</coldName>
+        <dateName type="combatPoint">1380</dateName>
+     </date>
+     <frame>
+       <frameName>Tobi_Skill02_001.png</frameName>
+      <frameName>Tobi_Skill02_002.png</frameName>
+       <eventName type="setSound">Audio/Tobi/Tobi_skill1.mp3</eventName>
+      <eventName type="setChargeB">96</eventName>
+       <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Tobi_Skill02_003.png</frameName>
+      <frameName>Tobi_Skill02_004.png</frameName>
+      <eventName type="setAttackBox">ab_hit</eventName>
+      <eventName type="setChargeB">96</eventName>
+      <frameName>Tobi_Skill02_002.png</frameName>
+      <frameName>Tobi_Skill02_003.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">96</eventName>
+      <frameName>Tobi_Skill02_004.png</frameName>
+      <frameName>Tobi_Skill02_005.png</frameName>
+      <eventName type="setDelay">20</eventName>
+     </frame>
+   </action>
+    <action value="skill02">
+        <date>
+          <dateName type="attackType">Summon</dateName>
+          <dateName type="attackValue">0</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">0</dateName>
+          <coldName type="coldDown">15</coldName>
+            <dateName type="combatPoint">1920</dateName>
+        </date>
+        <frame>
+        <frameName>Tobi_Skill01_001.png</frameName>
+          <eventName type="setSound">Audio/Tobi/Tobi_skill2.mp3</eventName>
+        <eventName type="setMon">TamaBomb</eventName>
+        <frameName>Tobi_Skill01_002.png</frameName> 
+        <frameName>Tobi_Skill01_003.png</frameName>
+        <eventName type="setDelay">30</eventName>
+        <frameName>Tobi_Skill01_004.png</frameName>
+        <eventName type="setMon">TamaBomb</eventName>
+        <frameName>Tobi_Skill01_005.png</frameName>
+        <frameName>Tobi_Skill01_006.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Tobi_Skill01_007.png</frameName>
+          <eventName type="setSound">Audio/Tobi/Tobi_skill2_1.mp3</eventName>
+        <frameName>Tobi_Skill01_008.png</frameName>
+        <eventName type="setDelay">40</eventName>
+        </frame>
+    </action>
+    <action value="skill03">
+        <date>
+			     <dateName type="attackType">cBuff</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">6</dateName>
+            <coldName type="coldDown">20</coldName>
+               <dateName type="combatPoint">0</dateName>
+        </date>
+        <frame>
+          <frameName>Tobi_Skill03_001.png</frameName>
+          <frameName>Tobi_Skill03_002.png</frameName>
+          <eventName type="setSound">Audio/Tobi/Tobi_skill3.mp3</eventName>
+          <frameName>Tobi_Skill03_003.png</frameName>
+          <frameName>Tobi_Skill03_004.png</frameName>
+          <frameName>Tobi_Skill03_005.png</frameName>
+          <frameName>Tobi_Skill03_006.png</frameName>
+          <eventName type="setSkillEffect">sharingan2</eventName>
+          <frameName>Tobi_Skill03_007.png</frameName>
+          <eventName type="setSound">Audio/Effect/srg2.mp3</eventName>  
+          <eventName type="setDelay">40</eventName>     
+          <eventName type="setBuff">17</eventName>    
+       </frame>
+    </action>
+   <action value="skill04">
+     <date>
+      <dateName type="attackType">cAttack</dateName>
+      <dateName type="attackValue">960</dateName>
+      <dateName type="attackRangeX">32</dateName>
+      <dateName type="attackRangeY">48</dateName>
+      <coldName type="coldDown">1</coldName>
+      <dateName type="combatPoint">3480</dateName>
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+        <frameName>Tobi_Skill04_001.png</frameName>
+          <eventName type="setSound">Audio/Tobi/Tobi_skill4.mp3</eventName>
+        <frameName>Tobi_Skill04_002.png</frameName>
+        <eventName type="setCommand">findTarget</eventName> 
+        <eventName type="setCommand">setTransport</eventName>
+        <frameName>Tobi_Skill04_003.png</frameName>
+        <frameName>Tobi_Skill04_004.png</frameName>
+        <eventName type="setAttackBox">ct_hit</eventName>
+        <eventName type="setDelay">20</eventName>
+        <eventName type="setMon">Shenwei2</eventName> 
+        <eventName type="setDelay">50</eventName>
+     </frame>
+   </action>
+    <action value="skill05">
+     <date>
+       <dateName type="attackType">cAttack</dateName>
+       <dateName type="attackValue">460</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">9220</dateName>
+     </date>
+     <frame>
+  <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+  <frameName>Tobi_Skill05_001.png</frameName>
+  <frameName>Tobi_Skill05_002.png</frameName>
+  <eventName type="setOugis">10</eventName>
+  <frameName>Tobi_Skill05_003.png</frameName>
+  <frameName>Tobi_Skill05_004.png</frameName>
+  <frameName>Tobi_Skill05_005.png</frameName>
+   <eventName type="setCommand">setInvincible</eventName>
+  <frameName>Tobi_Skill05_006.png</frameName>
+  <frameName>Tobi_Skill05_007.png</frameName>
+  <frameName>Tobi_Skill05_008.png</frameName>
+      <eventName type="setSound">Audio/Tobi/Tobi_skill5_1.mp3</eventName>
+  <eventName type="setAttackBox">o_hit</eventName>
+  <frameName>Tobi_Skill05_009.png</frameName>
+  <eventName type="setSound">Audio/Effect/goukakyu.mp3</eventName>
+  <frameName>Tobi_Skill05_010.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+  <frameName>Tobi_Skill05_011.png</frameName>
+  <frameName>Tobi_Skill05_012.png</frameName>
+    <eventName type="setAttackBox">f_hit</eventName>
+  <frameName>Tobi_Skill05_013.png</frameName>
+  <frameName>Tobi_Skill05_015.png</frameName>
+  <eventName type="setShadow">10</eventName> 
+  <frameName>Tobi_Skill05_016.png</frameName>
+  <eventName type="setShadow">10</eventName>         
+  <eventName type="setJump">true</eventName>
+  <frameName>Tobi_Skill05_017.png</frameName>
+  <eventName type="setShadow">10</eventName> 
+  <frameName>Tobi_Skill05_018.png</frameName>
+  <eventName type="setShadow">10</eventName> 
+  <frameName>Tobi_Skill05_019.png</frameName>
+  <eventName type="setShadow">10</eventName> 
+  <eventName type="setMon">FireRain</eventName> 
+  <frameName>Tobi_Skill05_019.png</frameName>
+  <eventName type="setShadow">10</eventName> 
+    <eventName type="setSound">Audio/Effect/goukakyu.mp3</eventName>
+  <frameName>Tobi_Skill05_019.png</frameName>
+  <eventName type="setShadow">10</eventName> 
+  <frameName>Tobi_Skill05_019.png</frameName>
+  <eventName type="setShadow">10</eventName> 
+  <frameName>Tobi_Skill05_020.png</frameName>
+  <frameName>Tobi_Skill05_021.png</frameName>
+  <frameName>Tobi_Skill05_022.png</frameName>
+  <frameName>Tobi_Skill05_023.png</frameName>
+  <frameName>Tobi_Skill05_024.png</frameName>
+  <frameName>Tobi_Skill05_025.png</frameName>
+  <eventName type="setDelay">10</eventName>
+  <frameName>Tobi_Skill05_026.png</frameName>
+  <frameName>Tobi_Skill05_027.png</frameName>
+    <eventName type="setSound">Audio/Effect/goukakyu.mp3</eventName>
+  <eventName type="setAttackBox">b_hit</eventName>
+  <frameName>Tobi_Skill05_028.png</frameName>
+  <frameName>Tobi_Skill05_029.png</frameName>
+  <eventName type="setAttackBox">c_hit</eventName>
+  <frameName>Tobi_Skill05_030.png</frameName>
+  <eventName type="setAttackBox">c_hit</eventName>
+  <frameName>Tobi_Skill05_031.png</frameName>
+  <frameName>Tobi_Skill05_033.png</frameName>
+  <eventName type="setSound">Audio/Tobi/Tobi_skill5_2.mp3</eventName>
+  <eventName type="setSkillEffect">sharingan3</eventName>
+  <eventName type="setDelay">10</eventName>
+  <frameName>Tobi_Skill05_034.png</frameName>
+  <eventName type="setDelay">10</eventName>
+  <eventName type="setMon">Shenwei</eventName> 
+  <frameName>Tobi_Skill05_035.png</frameName>
+  <eventName type="setDelay">50</eventName>
+  <frameName>Tobi_Skill05_036.png</frameName>
+  <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">Walk</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+           <frameName>Tobi_Skill10_01.png</frameName>
+          <frameName>Tobi_Skill10_02.png</frameName>
+          <frameName>Tobi_Skill10_03.png</frameName>
+          <frameName>Tobi_Skill10_04.png</frameName>
+          <frameName>Tobi_Skill10_05.png</frameName>
+            <frameName>Tobi_Skill10_06.png</frameName>
+        </frame>
+    </action>
+    <action value="skill11">
+        <date>
+            <dateName type="attackType">Walk</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+         
+        </frame>
+
+    </action>
+    <action value="skill12">
+        <date>
+            <dateName type="attackType">nAttack</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+         
+        </frame>
+    </action>
+</animation>

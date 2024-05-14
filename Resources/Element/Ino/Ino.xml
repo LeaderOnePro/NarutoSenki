@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Ino</dateName>
+        <dateName type="attackValue">5000</dateName>
+        <dateName type="attackRangeX">63</dateName>
+        <dateName type="attackRangeY">76</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Ino_Idle_001.png</frameName>
+        <frameName>Ino_Idle_002.png</frameName>
+        <frameName>Ino_Idle_003.png</frameName>
+        <frameName>Ino_Idle_004.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Ino_Walk_01.png</frameName>
+        <frameName>Ino_Walk_02.png</frameName>
+        <frameName>Ino_Walk_03.png</frameName>
+        <frameName>Ino_Walk_04.png</frameName>
+        <frameName>Ino_Walk_05.png</frameName>
+        <frameName>Ino_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Ino_Hurt_01.png</frameName>
+        <frameName>Ino_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Ino/Ino_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Ino_AirHurt_001.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Ino_KnockDown_001.png</frameName>
+           <eventName type="setDelay">10</eventName>
+          <frameName>Ino_KnockDown_002.png</frameName>
+           <eventName type="setDelay">60</eventName>
+          <frameName>Ino_KnockDown_003.png</frameName>
+          <frameName>Ino_KnockDown_004.png</frameName>
+          <frameName>Ino_KnockDown_005.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Ino_Float_001.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Ino_Float_002.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Ino_Float_003.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Ino_KnockDown_001.png</frameName>
+          <frameName>Ino_KnockDown_002.png</frameName>
+          <eventName type="setSound">Audio/Ino/Ino_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+          <frameName>Ino_NAttack_001.png</frameName>
+          <frameName>Ino_NAttack_002.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Ino_NAttack_003.png</frameName>
+          <eventName type="setAttackBox">n_hit</eventName>
+          <frameName>Ino_NAttack_004.png</frameName>
+          <frameName>Ino_NAttack_005.png</frameName>
+          <frameName>Ino_NAttack_006.png</frameName>
+          <eventName type="setMove">8</eventName>
+          <frameName>Ino_NAttack_008.png</frameName>
+          <frameName>Ino_NAttack_009.png</frameName>
+          <eventName type="setAttackBox">n_hit</eventName>
+          <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+          <frameName>Ino_NAttack_010.png</frameName>
+          <frameName>Ino_NAttack_011.png</frameName>
+          <eventName type="setSound">Audio/Ino/Ino_combo.mp3</eventName>
+          <eventName type="setMove">16</eventName>
+          <frameName>Ino_NAttack_012.png</frameName>
+          <frameName>Ino_NAttack_013.png</frameName>
+          <eventName type="setAttackBox">l_hit</eventName>
+          <eventName type="setSound">Audio/Effect/combo3.mp3</eventName>
+          <frameName>Ino_NAttack_014.png</frameName>
+          <frameName>Ino_NAttack_015.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+      <dateName type="attackType">aAttack</dateName>
+      <dateName type="attackValue">560</dateName>
+      <dateName type="attackRangeX">0</dateName>
+      <dateName type="attackRangeY">48</dateName>
+      <coldName type="coldDown">10</coldName>
+      <dateName type="combatPoint">1120</dateName>
+     </date>
+     <frame>
+          <eventName type="setSound">Audio/Ino/Ino_skill1.mp3</eventName>
+          <frameName>Ino_Skill01_001.png</frameName>
+          <frameName>Ino_Skill01_003.png</frameName>
+          <frameName>Ino_Skill01_004.png</frameName>
+          <frameName>Ino_Skill01_006.png</frameName>
+          <eventName type="setChargeB">96</eventName>
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+          <frameName>Ino_Skill01_007.png</frameName>
+          <frameName>Ino_Skill01_008.png</frameName>
+          <eventName type="setAttackBox">c_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+          <eventName type="setChargeB">96</eventName>
+          <frameName>Ino_Skill01_009.png</frameName>
+          <frameName>Ino_Skill01_011.png</frameName>
+          <frameName>Ino_Skill01_012.png</frameName>
+     </frame>
+   </action>
+    <action value="skill02">
+        <date>
+          <dateName type="attackType">aAttack</dateName>
+          <dateName type="attackValue">760</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">48</dateName>
+          <coldName type="coldDown">15</coldName>
+          <dateName type="combatPoint">1520</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Ino/ino_skill2.mp3</eventName>
+          <frameName>Ino_Skill02_001.png</frameName>
+          <eventName type="setJump">true</eventName>
+          <frameName>Ino_Skill02_002.png</frameName>
+          <frameName>Ino_Skill02_003.png</frameName>
+          <frameName>Ino_Skill02_004.png</frameName>
+          <frameName>Ino_Skill02_005.png</frameName>
+          <frameName>Ino_Skill02_006.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Ino_Skill02_007.png</frameName>
+          <eventName type="setSound">Audio/Ino/ino_skill3_1.mp3</eventName>
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <frameName>Ino_Skill02_008.png</frameName>
+          <frameName>Ino_Skill02_009.png</frameName>
+          <eventName type="setAttackBox">b_hit</eventName>
+           <eventName type="setDSound">Audio/Effect/damage_h.mp3</eventName>
+        </frame>
+    </action>
+       <action value="skill03">
+        <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">420</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">25</coldName>
+        <dateName type="combatPoint">2100</dateName>
+        </date>
+        <frame>
+        <frameName>Ino_Skill03_002.png</frameName>
+        <eventName type="setSound">Audio/Ino/Ino_skill3.mp3</eventName>  
+        <frameName>Ino_Skill03_003.png</frameName>
+        <eventName type="setChargeB">192</eventName>
+        <frameName>Ino_Skill03_004.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+        <frameName>Ino_Skill03_005.png</frameName>
+        <frameName>Ino_Skill03_006.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Ino_Skill03_008.png</frameName>
+        <frameName>Ino_Skill03_010.png</frameName>
+        <eventName type="setSound">Audio/Ino/Ino_skill3_1.mp3</eventName>  
+        <eventName type="setAttackBox">f_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_o2.mp3</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Ino_Skill03_011.png</frameName>
+        <frameName>Ino_Skill03_012.png</frameName>
+        <frameName>Ino_Skill03_013.png</frameName>
+        <frameName>Ino_Skill03_014.png</frameName>
+        <frameName>Ino_Skill03_015.png</frameName>
+        <eventName type="setJump">true</eventName>
+        <frameName>Ino_Skill03_016.png</frameName>
+        <eventName type="setSound">Audio/Ino/Ino_skill3_2.mp3</eventName>  
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <frameName>Ino_Skill03_017.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Ino_Skill03_017_1.png</frameName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+        <frameName>Ino_Skill03_018.png</frameName>
+        <frameName>Ino_Skill03_019.png</frameName>
+        <frameName>Ino_Skill03_020.png</frameName>
+        <frameName>Ino_Skill03_021.png</frameName>
+        <frameName>Ino_Skill03_022.png</frameName>
+       </frame>
+    </action>
+   <action value="skill04">
+     <date>
+    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">520</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">3120</dateName>
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+        <frameName>Ino_Skill04_001.png</frameName>
+        <eventName type="setSound">Audio/Ino/Ino_skill4.mp3</eventName>  
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Ino_Skill04_002.png</frameName>
+        <frameName>Ino_Skill04_003.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+        <frameName>Ino_Skill04_004.png</frameName>
+        <frameName>Ino_Skill04_005.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+       <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+        <frameName>Ino_Skill04_006.png</frameName>
+        <frameName>Ino_Skill04_007.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+       <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+        <frameName>Ino_Skill04_009.png</frameName>
+        <frameName>Ino_Skill04_011.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+        <frameName>Ino_Skill04_012.png</frameName>
+        <frameName>Ino_Skill04_013.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>   
+        <eventName type="setDSound">Audio/Effect/damage_l.mp3</eventName>
+     </frame>
+   </action>
+    <action value="skill05">
+     <date>
+          <dateName type="attackType">Summon</dateName>
+          <dateName type="attackValue">0</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">0</dateName>
+          <coldName type="coldDown">1</coldName>
+          <dateName type="combatPoint">8000</dateName>
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+        <frameName>Ino_Skill05_001.png</frameName>
+        <eventName type="setCommand">setInvincible</eventName>
+        <frameName>Ino_Skill05_002.png</frameName>
+        <frameName>Ino_Skill05_003.png</frameName>
+        <frameName>Ino_Skill05_004.png</frameName>
+        <frameName>Ino_Skill05_005.png</frameName>
+        <eventName type="setOugis">10</eventName>
+        <frameName>Ino_Skill05_006.png</frameName>
+        <eventName type="setBullet">Shintenshin</eventName>
+        <eventName type="setDelay">200</eventName> 
+         <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">idle</dateName>
+            <dateName type="attackValue">660</dateName>
+            <dateName type="attackRangeX">16</dateName>
+            <dateName type="attackRangeY">32</dateName>
+            <coldName type="coldDown">10</coldName>
+        </date>
+        <frame>
+            <frameName>Ino_Skill05_007.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>Ino_Skill05_008.png</frameName>
+        </frame>
+    </action>
+    <action value="skill11">
+        <date>
+            <dateName type="attackType">summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">15</coldName>
+        </date>
+        <frame>
+           
+        </frame>
+
+    </action>
+    <action value="skill12">
+        <date>
+            <dateName type="attackType">idle</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+           
+        </frame>
+
+    </action>
+</animation>

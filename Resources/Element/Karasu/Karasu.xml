@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Karasu</dateName>
+        <dateName type="attackValue">8000</dateName>
+        <dateName type="attackRangeX">66</dateName>
+        <dateName type="attackRangeY">75</dateName>
+        <coldName type="coldDown">320</coldName>
+      </date>
+      <frame>
+        <frameName>Karasu_Idle_01.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Karasu_Idle_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+        <frameName>Karasu_Idle_03.png</frameName>
+          <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Karasu_Walk_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Karasu_Hurt_01.png</frameName>
+        <frameName>Karasu_Hurt_02.png</frameName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Karasu_Hurt_02.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Karasu_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Karasu_KnockDown_02.png</frameName>
+          <frameName>Karasu_KnockDown_03.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Karasu_KnockDown_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Karasu_Hurt_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Karasu_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Karasu_KnockDown_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Karasu_KnockDown_01.png</frameName>
+          <frameName>Karasu_KnockDown_02.png</frameName>
+          <eventName type="resumeSkill">1</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+      <frameName>Karasu_NAttack_01.png</frameName>
+      <eventName type="setAttackBox">n_hit</eventName>
+      <eventName type="setDelay">40</eventName>
+      <frameName>Karasu_NAttack_02.png</frameName>
+      <eventName type="setAttackBox">n_hit</eventName>
+      <eventName type="setDelay">40</eventName>
+      <frameName>Karasu_NAttack_03.png</frameName>
+      <eventName type="setAttackBox">n_hit</eventName>
+      <eventName type="setDelay">40</eventName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">Summon</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">0</coldName>
+     </date>
+     <frame>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+		    <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">660</dateName>
+            <dateName type="attackRangeX">16</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">15</coldName>
+        </date>
+        <frame>
+            <frameName>Karasu_Skill02_02.png</frameName>
+            <frameName>Karasu_Skill02_03.png</frameName>
+            <eventName type="setSound">Audio/Effect/kuilei.mp3</eventName>
+            <eventName type="setJump">true</eventName>
+            <eventName type="setDelay">30</eventName>
+            <frameName>Karasu_Skill02_04.png</frameName>
+            <eventName type="setAttackBox">bl_hit</eventName>
+            <frameName>Karasu_Skill02_05.png</frameName>
+            <eventName type="setAttackBox">bl_hit</eventName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>Karasu_Skill02_06.png</frameName>
+            <eventName type="setAttackBox">bl_hit</eventName>
+            <eventName type="setDelay">10</eventName>
+             <frameName>Karasu_Skill02_02.png</frameName>
+            <eventName type="setDelay">10</eventName>
+           <frameName>Karasu_Skill02_02.png</frameName>
+            <eventName type="setDelay">10</eventName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">cAttack</dateName>
+            <dateName type="attackValue">300</dateName>
+            <dateName type="attackRangeX">32</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">1</coldName>
+        </date>
+        <frame>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">oAttack</dateName>
+       <dateName type="attackValue">660</dateName>
+       <dateName type="attackRangeX">64</dateName>
+       <dateName type="attackRangeY">32</dateName>
+       <coldName type="coldDown">1</coldName>
+     </date>
+     <frame>
+     </frame>
+   </action>
+
+    <action value="skill05">
+     <date>
+       <dateName type="attackType">oAttack</dateName>
+       <dateName type="attackValue">660</dateName>
+       <dateName type="attackRangeX">64</dateName>
+       <dateName type="attackRangeY">32</dateName>
+       <coldName type="coldDown">1</coldName>
+     </date>
+     <frame>
+     </frame>
+   </action>
+   
+</animation>

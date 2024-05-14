@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">HugeSRK</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">49</dateName>
+        <dateName type="attackRangeY">47</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>HugeSRK_Move_002.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">360</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+            <frameName>HugeSRK_Move_002.png</frameName>
+            <eventName type="setAttackBox">bl_hit</eventName>
+            <frameName>HugeSRK_Move_003.png</frameName>
+            <eventName type="setAttackBox">bl_hit</eventName>
+      </frame>
+    </action>
+
+</animation>

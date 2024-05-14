@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+      <date>
+        <dateName type="attackType">PainFlog</dateName>
+        <dateName type="attackValue">5000</dateName>
+        <dateName type="attackRangeX">33</dateName>
+        <dateName type="attackRangeY">40</dateName>
+        <coldName type="coldDown">160</coldName>
+      </date>
+      <frame>
+        <frameName>PainFlog_Idle_01.png</frameName>
+        <frameName>PainFlog_Walk_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+          <frameName>PainFlog_Walk_01.png</frameName>
+          <frameName>PainFlog_Walk_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>PainFlog_Walk_03.png</frameName>
+          <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+          <eventName type="setMove">32</eventName>
+          <frameName>PainFlog_KnockDown_01.png</frameName>
+
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>PainFlog_KnockDown_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>PainFlog_KnockDown_01.png</frameName>
+          <frameName>PainFlog_KnockDown_02.png</frameName>
+          <frameName>PainFlog_KnockDown_03.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>PainFlog_KnockDown_04.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>PainFlog_Idle_01.png</frameName>
+         
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>PainFlog_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>PainFlog_KnockDown_02.png</frameName>
+          <eventName type="setDelay">20</eventName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>PainFlog_KnockDown_01.png</frameName>
+          <frameName>PainFlog_KnockDown_02.png</frameName>
+          <frameName>PainFlog_KnockDown_03.png</frameName>
+          <frameName>PainFlog_KnockDown_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+        <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">40</dateName>
+        <dateName type="attackRangeX">8</dateName>
+        <dateName type="attackRangeY">8</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+          <frameName>PainFlog_NAttack_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>PainFlog_NAttack_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>PainFlog_NAttack_03.png</frameName>
+          <frameName>PainFlog_NAttack_04.png</frameName>
+          <eventName type="setAttackBox">n_hit</eventName>
+          <eventName type="setDelay">10</eventName>
+      </frame>
+    </action>
+
+   
+</animation>

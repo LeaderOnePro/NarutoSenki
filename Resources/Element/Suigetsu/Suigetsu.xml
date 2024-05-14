@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Suigetsu</dateName>
+        <dateName type="attackValue">5500</dateName>
+        <dateName type="attackRangeX">55</dateName>
+        <dateName type="attackRangeY">70</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Suigetsu_Idle_01.png</frameName>
+        <frameName>Suigetsu_Idle_02.png</frameName>
+        <frameName>Suigetsu_Idle_03.png</frameName>
+        <frameName>Suigetsu_Idle_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Suigetsu_Walk_01.png</frameName>
+        <frameName>Suigetsu_Walk_02.png</frameName>
+        <frameName>Suigetsu_Walk_03.png</frameName>
+        <frameName>Suigetsu_Walk_04.png</frameName>
+        <frameName>Suigetsu_Walk_05.png</frameName>
+        <frameName>Suigetsu_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Suigetsu_Hurt_01.png</frameName>
+        <frameName>Suigetsu_Hurt_02.png</frameName>
+        <frameName>Suigetsu_Hurt_03.png</frameName>
+        <eventName type="setSound">Audio/Suigetsu/suigetsu_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Suigetsu_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Suigetsu_KnockDown_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Suigetsu_KnockDown_02.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Suigetsu_KnockDown_03.png</frameName>
+          <frameName>Suigetsu_KnockDown_04.png</frameName>
+          <frameName>Suigetsu_KnockDown_05.png</frameName>
+          <frameName>Suigetsu_KnockDown_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Suigetsu_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Suigetsu_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Suigetsu_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Suigetsu_KnockDown_01.png</frameName>
+          <frameName>Suigetsu_KnockDown_02.png</frameName>
+          <eventName type="setSound">Audio/Suigetsu/suigetsu_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+
+      </date>
+      <frame>
+        <frameName>Suigetsu_NAttack_01.png</frameName>
+        <frameName>Suigetsu_NAttack_02.png</frameName>
+        <frameName>Suigetsu_NAttack_03.png</frameName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+        <frameName>Suigetsu_NAttack_04.png</frameName>
+        <frameName>Suigetsu_NAttack_05.png</frameName>
+        <frameName>Suigetsu_NAttack_06.png</frameName>
+        <frameName>Suigetsu_NAttack_07.png</frameName>
+        <frameName>Suigetsu_NAttack_08.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Suigetsu_NAttack_09.png</frameName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+        <frameName>Suigetsu_NAttack_10.png</frameName>
+        <frameName>Suigetsu_NAttack_11.png</frameName>
+        <frameName>Suigetsu_NAttack_12.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <frameName>Suigetsu_NAttack_13.png</frameName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <eventName type="setSound">Audio/Suigetsu/suigetsu_combo.mp3</eventName>
+        <frameName>Suigetsu_NAttack_14.png</frameName>
+        <frameName>Suigetsu_NAttack_15.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">560</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">10</coldName>
+        <dateName type="combatPoint">1120</dateName>
+     </date>
+     <frame>
+       <eventName type="setSound">Audio/Suigetsu/suigetsu_skill1.mp3</eventName>
+        <frameName>Suigetsu_Skill01_01.png</frameName>
+        <frameName>Suigetsu_Skill01_03.png</frameName>
+        <eventName type="setChargeB">192</eventName>
+        <frameName>Suigetsu_Skill01_04.png</frameName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/blade_damage2.mp3</eventName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Suigetsu_Skill01_04.png</frameName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/blade_damage2.mp3</eventName>
+        <eventName type="setDelay">10</eventName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+          <dateName type="attackType">Summon</dateName>
+          <dateName type="attackValue">0</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">0</dateName>
+          <coldName type="coldDown">15</coldName>
+           <dateName type="combatPoint">1560</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Suigetsu/suigetsu_skill2.mp3</eventName>
+          <frameName>Suigetsu_Skill02_002.png</frameName>
+          <frameName>Suigetsu_Skill02_003.png</frameName>
+          <frameName>Suigetsu_Skill02_004.png</frameName>
+          <frameName>Suigetsu_Skill02_005.png</frameName>
+            <eventName type="setMon">Kubi</eventName>
+          <frameName>Suigetsu_Skill02_006.png</frameName>
+           <eventName type="setDelay">160</eventName>  
+          <frameName>Suigetsu_Skill02_009.png</frameName>
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+          <dateName type="attackType">cBuff</dateName>
+          <dateName type="attackValue">0</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">0</dateName>
+          <coldName type="coldDown">25</coldName>
+          <dateName type="combatPoint">1960</dateName>
+        </date>
+        <frame>
+            <eventName type="setSound">Audio/Suigetsu/suigetsu_skill3_1.mp3</eventName>
+            <frameName>Suigetsu_Skill03_01.png</frameName>
+            <frameName>Suigetsu_Skill03_02.png</frameName>
+            <frameName>Suigetsu_Skill03_03.png</frameName>
+            <frameName>Suigetsu_Skill03_04.png</frameName>
+            <eventName type="setBuff">17</eventName>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">Bullet</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">1</coldName>
+       <dateName type="combatPoint">3000</dateName>
+     </date>
+     <frame>
+         <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+         <eventName type="setSound">Audio/Suigetsu/suigetsu_skill4.mp3</eventName>
+         <frameName>Suigetsu_Skill04_01.png</frameName>
+         <frameName>Suigetsu_Skill04_02.png</frameName>
+         <frameName>Suigetsu_Skill04_03.png</frameName>
+         <frameName>Suigetsu_Skill04_04.png</frameName>
+         <eventName type="setMon">WaterBullet</eventName>
+         <frameName>Suigetsu_Skill04_02.png</frameName>
+         <frameName>Suigetsu_Skill04_03.png</frameName>
+         <frameName>Suigetsu_Skill04_04.png</frameName>
+         <eventName type="setMon">WaterBullet</eventName>
+         <frameName>Suigetsu_Skill04_02.png</frameName>
+         <eventName type="setDelay">30</eventName>
+         <frameName>Suigetsu_Skill04_05.png</frameName>
+         <eventName type="setMon">WaterBom</eventName>
+         <eventName type="setDelay">20</eventName>
+     </frame>
+   </action>
+
+   <action value="skill05">
+
+        <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">1060</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">8480</dateName>
+        </date>
+        <frame>
+          <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+          <frameName>Suigetsu_Skill05_02.png</frameName>
+          <frameName>Suigetsu_Skill05_03.png</frameName>
+          <eventName type="setOugis">10</eventName>
+          <frameName>Suigetsu_Skill05_07.png</frameName>   
+          <eventName type="setCommand">setInvincible</eventName>
+          <frameName>Suigetsu_Skill05_08.png</frameName>
+          <eventName type="setMove">32</eventName>
+          <frameName>Suigetsu_Skill05_10.png</frameName>
+          <eventName type="setSound">Audio/Suigetsu/suigetsu_skill5_4.mp3</eventName>
+          <frameName>Suigetsu_Skill05_11.png</frameName>
+          <eventName type="setAttackBox">o2_hit</eventName>
+          <frameName>Suigetsu_Skill05_12.png</frameName>
+          <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+          <frameName>Suigetsu_Skill05_13.png</frameName>
+          <frameName>Suigetsu_Skill05_16.png</frameName>
+           <eventName type="setChargeB">128</eventName>
+          <frameName>Suigetsu_Skill05_17.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setDelay">10</eventName>
+          <frameName>Suigetsu_Skill05_18.png</frameName>
+          <eventName type="setSound">Audio/Suigetsu/suigetsu_skill5_3.mp3</eventName>
+          <eventName type="setAttackBox">o_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+          <frameName>Suigetsu_Skill05_20.png</frameName>
+          <frameName>Suigetsu_Skill05_22.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setChargeB">128</eventName>
+          <frameName>Suigetsu_Skill05_23.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Suigetsu_Skill05_24.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">bf_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+          <frameName>Suigetsu_Skill05_25.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">bf_hit</eventName>
+          <frameName>Suigetsu_Skill05_26.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <frameName>Suigetsu_Skill05_27.png</frameName>
+          <frameName>Suigetsu_Skill05_28.png</frameName>
+          <eventName type="setChargeB">48</eventName>
+          <frameName>Suigetsu_Skill05_30.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+          <frameName>Suigetsu_Skill05_32.png</frameName>
+          <frameName>Suigetsu_Skill05_33.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Suigetsu_Skill05_34.png</frameName>
+          <frameName>Suigetsu_Skill05_35.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setChargeB">48</eventName>
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/blade_damage.mp3</eventName>
+          <frameName>Suigetsu_Skill05_37.png</frameName>
+          <frameName>Suigetsu_Skill05_38.png</frameName>
+          <frameName>Suigetsu_Skill05_50.png</frameName>
+          <eventName type="setJump">true</eventName>
+          <frameName>Suigetsu_Skill05_51.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Suigetsu_Skill05_52.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Suigetsu_Skill05_53.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Suigetsu_Skill05_54.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Suigetsu_Skill05_55.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setDelay">10</eventName>
+          <frameName>Suigetsu_Skill05_56.png</frameName>
+          <frameName>Suigetsu_Skill05_57.png</frameName>
+          <frameName>Suigetsu_Skill05_58.png</frameName>
+          <eventName type="setSound">Audio/Suigetsu/suigetsu_skill5_5.mp3</eventName>
+          <eventName type="setAttackBox">f_hit</eventName>
+          <frameName>Suigetsu_Skill05_59.png</frameName>
+          <frameName>Suigetsu_Skill05_60.png</frameName>
+          <eventName type="setCommand">reInvincible</eventName>
+        </frame>
+
+    </action>
+
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">idle</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+            <frameName>Suigetsu_Skill03_06.png</frameName>
+        </frame>
+    </action>
+    <action value="skill11">
+        <date>
+            <dateName type="attackType">walk</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+            <frameName>Suigetsu_Skill03_06.png</frameName>
+            <frameName>Suigetsu_Skill03_05.png</frameName>
+            <frameName>Suigetsu_Skill03_04.png</frameName>
+            <frameName>Suigetsu_Skill03_05.png</frameName>
+            <frameName>Suigetsu_Skill03_06.png</frameName>
+        </frame>
+    </action>
+    <action value="skill12">
+        <date>
+            <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">0</coldName>
+        </date>
+        <frame>
+            <frameName>Suigetsu_Skill03_08.png</frameName>
+            <eventName type="setAttackBox">f_hit</eventName>
+            <eventName type="setActionResume">20</eventName>
+            <eventName type="setSound">Audio/Suigetsu/suigetsu_skill3_2.mp3</eventName>
+            <frameName>Suigetsu_Skill03_09.png</frameName>
+            <eventName type="setJump">true</eventName>
+            <frameName>Suigetsu_Skill03_10.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>Suigetsu_Skill03_11.png</frameName>
+            <eventName type="setDelay">20</eventName>
+            <frameName>Suigetsu_Skill03_12.png</frameName>
+            <eventName type="setDelay">10</eventName>
+            <frameName>Suigetsu_Skill03_13.png</frameName>
+        </frame>
+    </action>
+
+</animation>

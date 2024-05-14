@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Deidara</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Deidara_Skill03_02.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+          <frameName>Deidara_Skill03_02.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">2260</dateName>
+        <dateName type="attackRangeX">96</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <eventName type="setSound">Audio/Deidara/deidara_skill3.mp3</eventName>
+        <frameName>Deidara_Skill03_02.png</frameName>
+        <frameName>Deidara_Skill03_04.png</frameName>
+        <frameName>Deidara_Skill03_05.png</frameName>
+        <frameName>Deidara_Skill03_06.png</frameName>      
+        <frameName>Deidara_Skill03_07.png</frameName>
+        <eventName type="setSound">Audio/Effect/bom.mp3</eventName>
+          <eventName type="setAttackBox">a_hit</eventName>
+        <frameName>Deidara_Skill03_08.png</frameName>
+        <frameName>Deidara_Skill03_09.png</frameName>
+        <frameName>Deidara_Skill03_10.png</frameName>
+        <frameName>Deidara_Skill03_11.png</frameName>
+       <frameName>Deidara_Skill03_12.png</frameName>
+       <frameName>Deidara_Skill03_13.png</frameName>
+       <frameName>Deidara_Skill03_14.png</frameName>
+       <frameName>Deidara_Skill03_15.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

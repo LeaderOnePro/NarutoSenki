@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Neji</dateName>
+        <dateName type="attackValue">5000</dateName>
+        <dateName type="attackRangeX">63</dateName>
+        <dateName type="attackRangeY">75</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Neji_Idle_01.png</frameName>
+        <frameName>Neji_Idle_02.png</frameName>
+        <frameName>Neji_Idle_03.png</frameName>
+        <frameName>Neji_Idle_04.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Neji_Walk_01.png</frameName>
+        <frameName>Neji_Walk_02.png</frameName>
+        <frameName>Neji_Walk_03.png</frameName>
+        <frameName>Neji_Walk_04.png</frameName>
+        <frameName>Neji_Walk_05.png</frameName>
+        <frameName>Neji_Walk_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Neji_Hurt_01.png</frameName>
+        <frameName>Neji_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Neji/Neji_hurt.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+         <frameName>Neji_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+          <frameName>Neji_KnockDown_01.png</frameName>
+          <frameName>Neji_KnockDown_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Neji_KnockDown_03.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Neji_KnockDown_04.png</frameName>
+          <frameName>Neji_KnockDown_05.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Neji_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Neji_Float_02.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Neji_Float_03.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Neji_KnockDown_01.png</frameName>
+          <frameName>Neji_KnockDown_02.png</frameName>
+          <frameName>Neji_KnockDown_03.png</frameName>
+          <eventName type="setSound">Audio/Neji/Neji_dead.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">80</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+          <frameName>Neji_NAttack_01.png</frameName>
+          <frameName>Neji_NAttack_02.png</frameName>
+          <frameName>Neji_NAttack_03.png</frameName>
+          <frameName>Neji_NAttack_04.png</frameName>
+          <eventName type="setSound">Audio/Effect/combo1.mp3</eventName>
+          <eventName type="setAttackBox">n_hit</eventName>
+          <frameName>Neji_NAttack_05.png</frameName>
+          <frameName>Neji_NAttack_06.png</frameName>
+          <frameName>Neji_NAttack_07.png</frameName>
+          <frameName>Neji_NAttack_08.png</frameName>
+          <eventName type="setMove">8</eventName>
+          <frameName>Neji_NAttack_09.png</frameName>
+          <eventName type="setSound">Audio/Effect/combo2.mp3</eventName>
+          <eventName type="setAttackBox">n_hit</eventName>
+          <frameName>Neji_NAttack_10.png</frameName>
+          <frameName>Neji_NAttack_11.png</frameName>
+          <frameName>Neji_NAttack_12.png</frameName>
+          <eventName type="setSound">Audio/Neji/Neji_combo.mp3</eventName>
+          <frameName>Neji_NAttack_13.png</frameName>
+          <eventName type="setMove">16</eventName>
+          <frameName>Neji_NAttack_14.png</frameName>
+          <eventName type="setSound">Audio/Effect/combo3.mp3</eventName>
+          <eventName type="setAttackBox">l_hit</eventName>
+          <frameName>Neji_NAttack_15.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">hsBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">10</dateName>
+       <coldName type="coldDown">15</coldName>
+        <dateName type="combatPoint">0</dateName> 
+     </date>
+     <frame>
+        <eventName type="setSound">Audio/Neji/Neji_skill01.mp3</eventName>
+        <frameName>Neji_Skill01_01.png</frameName>
+        <frameName>Neji_Skill01_02.png</frameName>
+        <frameName>Neji_Skill01_03.png</frameName>
+        <frameName>Neji_Skill01_04.png</frameName>
+        <eventName type="setSound">Audio/Effect/baiyan.mp3</eventName>
+        <frameName>Neji_Skill01_05.png</frameName>
+        <frameName>Neji_Skill01_06.png</frameName>
+        <eventName type="setBuff">200</eventName>
+     </frame>
+   </action>
+
+    <action value="skill02">
+        <date>
+		    <dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">760</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">48</dateName>
+             <coldName type="coldDown">15</coldName>
+            <dateName type="combatPoint">1520</dateName> 
+        </date>
+        <frame>
+            <frameName>Neji_Skill02_02.png</frameName>
+            <eventName type="setSound">Audio/Neji/Neji_skill02_1.mp3</eventName>
+            <frameName>Neji_Skill02_03.png</frameName>
+           <eventName type="setMove">16</eventName>
+            <frameName>Neji_Skill02_04.png</frameName>
+            <frameName>Neji_Skill02_05.png</frameName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <frameName>Neji_Skill02_06.png</frameName>
+            <frameName>Neji_Skill02_07.png</frameName>
+            <eventName type="setChargeB">128</eventName>
+            <frameName>Neji_Skill02_08.png</frameName>
+            <eventName type="setSound">Audio/Neji/Neji_skill02_2.mp3</eventName>
+            <eventName type="setAttackBox">c_hit</eventName>
+            <frameName>Neji_Skill02_09.png</frameName> 
+        </frame>
+    </action>
+
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">260</dateName>
+            <dateName type="attackRangeX">16</dateName>
+            <dateName type="attackRangeY">48</dateName>
+             <coldName type="coldDown">25</coldName>
+            <dateName type="combatPoint">2340</dateName> 
+        </date>
+        <frame>
+        <eventName type="setSound">Audio/Neji/Neji_skill03.mp3</eventName>
+        <frameName>Neji_Skill03_02.png</frameName>
+        <frameName>Neji_Skill03_03.png</frameName>
+        <eventName type="setSkillEffect">Bagua</eventName>
+        <eventName type="setDelay">40</eventName>
+        <frameName>Neji_Skill03_04.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_05.png</frameName>
+        <frameName>Neji_Skill03_06.png</frameName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_07.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Neji_Skill03_08.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_09.png</frameName>
+        <frameName>Neji_Skill03_10.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_11.png</frameName>
+        <frameName>Neji_Skill03_12.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_04.png</frameName>
+        <eventName type="setMove">8</eventName>       
+        <frameName>Neji_Skill03_05.png</frameName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_06.png</frameName>
+        <frameName>Neji_Skill03_07.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_08.png</frameName>
+        <frameName>Neji_Skill03_09.png</frameName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_10.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Neji_Skill03_11.png</frameName>
+        <eventName type="setAttackBox">s_hit</eventName>
+        <eventName type="setDSound">Audio/Effect/damage_c.mp3</eventName>
+        <frameName>Neji_Skill03_13.png</frameName>
+        <frameName>Neji_Skill03_14.png</frameName>
+        </frame>
+    </action>
+
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">Summon</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">0</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">3040</dateName> 
+     </date>
+     <frame>
+      <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>  
+
+      <eventName type="setCommand">setInvincible</eventName>
+      <frameName>Neji_Skill04_02.png</frameName>
+      <frameName>Neji_Skill04_03.png</frameName>
+      <eventName type="setMon">Kaiten</eventName>
+       <eventName type="setSound">Audio/Neji/Neji_skill04.mp3</eventName>
+      <frameName>Neji_Skill04_04.png</frameName>
+      <eventName type="setDelay">90</eventName>
+      <frameName>Neji_Skill04_05.png</frameName>
+      <frameName>Neji_Skill04_06.png</frameName>
+      <frameName>Neji_Skill04_07.png</frameName>
+      <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+
+    <action value="skill05">
+     <date>
+       <dateName type="attackType">aAttack</dateName>
+       <dateName type="attackValue">860</dateName>
+       <dateName type="attackRangeX">16</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">8540</dateName> 
+     </date>
+     <frame>
+          <eventName type="setSound">Audio/Effect/ougis.mp3</eventName>
+          <eventName type="setOugis">10</eventName>
+          <frameName>Neji_Skill05_13.png</frameName>
+          <eventName type="setSkillEffect">Bagua</eventName>
+          <frameName>Neji_Skill05_13.png</frameName> 
+          <eventName type="setCommand">setInvincible</eventName>  
+          <eventName type="setDelay">10</eventName>
+          <frameName>Neji_Skill05_001.png</frameName>
+          <eventName type="setSound">Audio/Neji/Neji_skill5_1.mp3</eventName>   
+          <frameName>Neji_Skill05_002.png</frameName>
+            <eventName type="setShadow">10</eventName> 
+          <eventName type="setChargeB">128</eventName>
+          <eventName type="setAttackBox">f_hit</eventName>   
+          <eventName type="setDSound">Audio/Effect/damage_o2.mp3</eventName>
+          <frameName>Neji_Skill05_003.png</frameName>
+          <frameName>Neji_Skill05_004.png</frameName>
+            <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">c_hit</eventName>   
+          <frameName>Neji_Skill05_005.png</frameName>
+          <frameName>Neji_Skill05_006.png</frameName>
+            <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">ac_hit</eventName>  
+            <eventName type="setDSound">Audio/Effect/damage_i.mp3</eventName>
+          <frameName>Neji_Skill05_007.png</frameName>
+          <frameName>Neji_Skill05_008.png</frameName>
+          <frameName>Neji_Skill05_18.png</frameName>
+          <eventName type="setMove">16</eventName>
+          <frameName>Neji_Skill05_19.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setSound">Audio/Neji/Neji_skill5_3.mp3</eventName>   
+          <frameName>Neji_Skill05_20.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <frameName>Neji_Skill05_21.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setDSound">Audio/Effect/damage_haken.mp3</eventName>
+          <frameName>Neji_Skill05_22.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_haken.mp3</eventName>
+          <frameName>Neji_Skill05_23.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Neji_Skill05_20.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <frameName>Neji_Skill05_21.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setDSound">Audio/Effect/damage_haken.mp3</eventName>
+          <frameName>Neji_Skill05_22.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <eventName type="setAttackBox">ac_hit</eventName>
+          <eventName type="setDSound">Audio/Effect/damage_haken.mp3</eventName>
+          <frameName>Neji_Skill05_23.png</frameName>
+          <eventName type="setShadow">10</eventName>  
+          <frameName>Neji_Skill05_34.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+              <eventName type="setSound">Audio/Neji/Neji_skill04_1.mp3</eventName>
+          <frameName>Neji_Skill05_35.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Neji_Skill05_36.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Neji_Skill05_37.png</frameName>
+          <eventName type="setShadow">10</eventName> 
+          <frameName>Neji_Skill05_40.png</frameName>
+          <eventName type="setSound">Audio/Neji/Neji_skill5_4.mp3</eventName>
+          <eventName type="setMon">Hasan</eventName>
+          <frameName>Neji_Skill05_41.png</frameName>
+          <frameName>Neji_Skill05_40.png</frameName>
+          <frameName>Neji_Skill05_42.png</frameName>
+          <frameName>Neji_Skill05_43.png</frameName>
+          <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+   
+</animation>
